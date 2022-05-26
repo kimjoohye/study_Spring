@@ -32,7 +32,7 @@
 			<item value="com.pcwk.ehr"/>
 		</list>
 		<list key="artifactId">
-			<item value="S_SH01_02"/>
+			<item value="S_SH02_03"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -43,7 +43,6 @@
 			<item value="[name]"/>
 		</list>
 		<list key="version">
-			<item value="0.1"/>
 			<item value="0.0.1-SNAPSHOT"/>
 		</list>
 	</section>
