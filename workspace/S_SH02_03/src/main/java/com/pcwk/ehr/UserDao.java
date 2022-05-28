@@ -9,18 +9,15 @@ import java.sql.SQLException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public abstract class UserDao {
+public class UserDao {
 	final Logger LOG = LogManager.getLogger(this.getClass());
 
-
-	/**
-	 * DB Connection 정보
-	 * @return Connection
-	 * @throws SQLException
-	 * @throws ClassNotFoundException
-	 */
-	public abstract Connection getConnection() throws SQLException, ClassNotFoundException;
-
+	private SimpleConnectionMaker simpleConnectionMaker;
+	
+	public UserDao() {
+		simpleConnectionMaker = new SimpleConnectionMaker();
+	}
+		
 	/**
 	 * 회원 단건
 	 * 
@@ -39,7 +36,7 @@ public abstract class UserDao {
 
 		// 1.
 		Connection connection = null;
-		connection = getConnection();
+		connection = simpleConnectionMaker.makeNewConnection();
 
 		// 2.
 		StringBuilder sb = new StringBuilder(100);
@@ -100,7 +97,7 @@ public abstract class UserDao {
 
 		// 1.
 		Connection connection = null;
-		connection = getConnection();
+		connection = simpleConnectionMaker.makeNewConnection();
 
 		// 2.
 		StringBuilder sb = new StringBuilder(100);

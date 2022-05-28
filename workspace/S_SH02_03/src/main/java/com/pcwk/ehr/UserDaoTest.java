@@ -13,7 +13,7 @@ public class UserDaoTest {
 	UserVO userVO;
 	
 	public UserDaoTest() {
-		dao = new NUserDao();
+		dao = new UserDao();
 		userVO = new UserVO("p07","김주혜07", "4321");
 		
 	}
