@@ -32,11 +32,8 @@
 			<item value="com.pcwk.ehr"/>
 		</list>
 		<list key="artifactId">
-			<item value="S_SH03_04"/>
-			<item value="S_SH03_03"/>
-			<item value="S_SH03_02"/>
-			<item value="S_SH03_01"/>
-			<item value="S_SH02_03"/>
+			<item value="S_SH06_03"/>
+			<item value="S_SH06_02"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

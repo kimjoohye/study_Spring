@@ -1,0 +1,1019 @@
+[2022-05-31 14:27:20.850] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-05-31 14:27:20.859] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@15de0b3c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@489115ef, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3857f613, org.springframework.test.context.support.DirtiesContextTestExecutionListener@198b6731, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7c6908d7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3c9754d8, org.springframework.test.context.event.EventPublishingTestExecutionListener@3bf7ca37]
+[2022-05-31 14:27:21.099] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:86) - =======================
+[2022-05-31 14:27:21.100] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:87) - =0. setUp()=
+[2022-05-31 14:27:21.100] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:88) - =======================
+[2022-05-31 14:27:21.102] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:93) - context:org.springframework.context.support.GenericApplicationContext@4c309d4d, started on Tue May 31 14:27:20 KST 2022
+[2022-05-31 14:27:21.102] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:94) - dao:com.pcwk.ehr.UserDao@64ec96c6
+[2022-05-31 14:27:21.102] DEBUG JunitUserDaoTest.addAndGet(JunitUserDaoTest.java:34) - =======================
+[2022-05-31 14:27:21.103] DEBUG JunitUserDaoTest.addAndGet(JunitUserDaoTest.java:35) - =1. setUp()=
+[2022-05-31 14:27:21.103] DEBUG JunitUserDaoTest.addAndGet(JunitUserDaoTest.java:36) - =======================
+[2022-05-31 14:27:22.256] DEBUG UserDaoDeleteAllStatement.makeStatement(UserDaoDeleteAllStatement.java:19) - =============================
+[2022-05-31 14:27:22.256] DEBUG UserDaoDeleteAllStatement.makeStatement(UserDaoDeleteAllStatement.java:20) - sql: 
+ DELETE FROM hr_member 
+
+[2022-05-31 14:27:22.256] DEBUG UserDaoDeleteAllStatement.makeStatement(UserDaoDeleteAllStatement.java:21) - =============================
+[2022-05-31 14:27:22.878] DEBUG UserDao.getCount(UserDao.java:43) - =============================
+[2022-05-31 14:27:22.878] DEBUG UserDao.getCount(UserDao.java:44) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:27:22.878] DEBUG UserDao.getCount(UserDao.java:45) - sql: 
+  SELECT COUNT(*) AS cnt    
+ FROM hr_member            
+ WHERE u_id LIKE ?  || '%' 
+
+[2022-05-31 14:27:22.879] DEBUG UserDao.getCount(UserDao.java:46) - =============================
+[2022-05-31 14:27:22.930] DEBUG UserDao.getCount(UserDao.java:59) - ====================
+[2022-05-31 14:27:22.930] DEBUG UserDao.getCount(UserDao.java:60) - =count=0
+[2022-05-31 14:27:22.930] DEBUG UserDao.getCount(UserDao.java:61) - ====================
+[2022-05-31 14:27:23.070] DEBUG UserDaoAddStatement.makeStatement(UserDaoAddStatement.java:35) - =============================
+[2022-05-31 14:27:23.070] DEBUG UserDaoAddStatement.makeStatement(UserDaoAddStatement.java:36) - param :UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:27:23.070] DEBUG UserDaoAddStatement.makeStatement(UserDaoAddStatement.java:37) - sql : 
+ INSERT INTO hr_member ( 
+     u_id,               
+     name,               
+     passwd              
+ ) VALUES (              
+     ?,                  
+     ?,                  
+     ?                   
+ )                       
+
+[2022-05-31 14:27:23.071] DEBUG UserDaoAddStatement.makeStatement(UserDaoAddStatement.java:38) - =============================
+[2022-05-31 14:27:23.193] DEBUG UserDao.getCount(UserDao.java:43) - =============================
+[2022-05-31 14:27:23.193] DEBUG UserDao.getCount(UserDao.java:44) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:27:23.193] DEBUG UserDao.getCount(UserDao.java:45) - sql: 
+  SELECT COUNT(*) AS cnt    
+ FROM hr_member            
+ WHERE u_id LIKE ?  || '%' 
+
+[2022-05-31 14:27:23.193] DEBUG UserDao.getCount(UserDao.java:46) - =============================
+[2022-05-31 14:27:23.198] DEBUG UserDao.getCount(UserDao.java:59) - ====================
+[2022-05-31 14:27:23.198] DEBUG UserDao.getCount(UserDao.java:60) - =count=1
+[2022-05-31 14:27:23.200] DEBUG UserDao.getCount(UserDao.java:61) - ====================
+[2022-05-31 14:27:23.352] DEBUG UserDaoAddStatement.makeStatement(UserDaoAddStatement.java:35) - =============================
+[2022-05-31 14:27:23.352] DEBUG UserDaoAddStatement.makeStatement(UserDaoAddStatement.java:36) - param :UserVO [uId=p070, name=김주혜070, passwd=4321]
+[2022-05-31 14:27:23.353] DEBUG UserDaoAddStatement.makeStatement(UserDaoAddStatement.java:37) - sql : 
+ INSERT INTO hr_member ( 
+     u_id,               
+     name,               
+     passwd              
+ ) VALUES (              
+     ?,                  
+     ?,                  
+     ?                   
+ )                       
+
+[2022-05-31 14:27:23.353] DEBUG UserDaoAddStatement.makeStatement(UserDaoAddStatement.java:38) - =============================
+[2022-05-31 14:27:23.538] DEBUG UserDao.getCount(UserDao.java:43) - =============================
+[2022-05-31 14:27:23.538] DEBUG UserDao.getCount(UserDao.java:44) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:27:23.538] DEBUG UserDao.getCount(UserDao.java:45) - sql: 
+  SELECT COUNT(*) AS cnt    
+ FROM hr_member            
+ WHERE u_id LIKE ?  || '%' 
+
+[2022-05-31 14:27:23.539] DEBUG UserDao.getCount(UserDao.java:46) - =============================
+[2022-05-31 14:27:23.545] DEBUG UserDao.getCount(UserDao.java:59) - ====================
+[2022-05-31 14:27:23.545] DEBUG UserDao.getCount(UserDao.java:60) - =count=2
+[2022-05-31 14:27:23.545] DEBUG UserDao.getCount(UserDao.java:61) - ====================
+[2022-05-31 14:27:23.694] DEBUG UserDao.get(UserDao.java:140) - =============================
+[2022-05-31 14:27:23.694] DEBUG UserDao.get(UserDao.java:141) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:27:23.694] DEBUG UserDao.get(UserDao.java:142) - sql: 
+  SELECT u_id,   
+        name,   
+        passwd  
+ FROM hr_member 
+ WHERE u_id = ? 
+
+[2022-05-31 14:27:23.695] DEBUG UserDao.get(UserDao.java:143) - =============================
+[2022-05-31 14:27:23.726] DEBUG UserDao.get(UserDao.java:164) - =============================
+[2022-05-31 14:27:23.726] DEBUG UserDao.get(UserDao.java:165) - =outVO=UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:27:23.726] DEBUG UserDao.get(UserDao.java:166) - =============================
+[2022-05-31 14:27:23.857] DEBUG UserDao.get(UserDao.java:140) - =============================
+[2022-05-31 14:27:23.857] DEBUG UserDao.get(UserDao.java:141) - param : UserVO [uId=p070, name=김주혜070, passwd=4321]
+[2022-05-31 14:27:23.857] DEBUG UserDao.get(UserDao.java:142) - sql: 
+  SELECT u_id,   
+        name,   
+        passwd  
+ FROM hr_member 
+ WHERE u_id = ? 
+
+[2022-05-31 14:27:23.858] DEBUG UserDao.get(UserDao.java:143) - =============================
+[2022-05-31 14:27:23.861] DEBUG UserDao.get(UserDao.java:164) - =============================
+[2022-05-31 14:27:23.861] DEBUG UserDao.get(UserDao.java:165) - =outVO=UserVO [uId=p070, name=김주혜070, passwd=4321]
+[2022-05-31 14:27:23.861] DEBUG UserDao.get(UserDao.java:166) - =============================
+[2022-05-31 14:27:23.866] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:102) - =======================
+[2022-05-31 14:27:23.866] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:103) - =9. tearDown()=
+[2022-05-31 14:27:23.866] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:104) - =======================
+[2022-05-31 14:27:23.869] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:86) - =======================
+[2022-05-31 14:27:23.869] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:87) - =0. setUp()=
+[2022-05-31 14:27:23.869] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:88) - =======================
+[2022-05-31 14:27:23.869] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:93) - context:org.springframework.context.support.GenericApplicationContext@4c309d4d, started on Tue May 31 14:27:20 KST 2022
+[2022-05-31 14:27:23.870] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:94) - dao:com.pcwk.ehr.UserDao@64ec96c6
+[2022-05-31 14:27:23.870] DEBUG JunitUserDaoTest.getFailure(JunitUserDaoTest.java:75) - =======================
+[2022-05-31 14:27:23.870] DEBUG JunitUserDaoTest.getFailure(JunitUserDaoTest.java:76) - =2. getFailure()=
+[2022-05-31 14:27:23.870] DEBUG JunitUserDaoTest.getFailure(JunitUserDaoTest.java:77) - =======================
+[2022-05-31 14:27:23.998] DEBUG UserDaoDeleteAllStatement.makeStatement(UserDaoDeleteAllStatement.java:19) - =============================
+[2022-05-31 14:27:23.998] DEBUG UserDaoDeleteAllStatement.makeStatement(UserDaoDeleteAllStatement.java:20) - sql: 
+ DELETE FROM hr_member 
+
+[2022-05-31 14:27:23.999] DEBUG UserDaoDeleteAllStatement.makeStatement(UserDaoDeleteAllStatement.java:21) - =============================
+[2022-05-31 14:27:24.193] DEBUG UserDao.get(UserDao.java:140) - =============================
+[2022-05-31 14:27:24.194] DEBUG UserDao.get(UserDao.java:141) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:27:24.194] DEBUG UserDao.get(UserDao.java:142) - sql: 
+  SELECT u_id,   
+        name,   
+        passwd  
+ FROM hr_member 
+ WHERE u_id = ? 
+
+[2022-05-31 14:27:24.194] DEBUG UserDao.get(UserDao.java:143) - =============================
+[2022-05-31 14:27:24.201] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:102) - =======================
+[2022-05-31 14:27:24.202] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:103) - =9. tearDown()=
+[2022-05-31 14:27:24.202] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:104) - =======================
+[2022-05-31 14:31:36.035] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-05-31 14:31:36.044] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@15de0b3c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@489115ef, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3857f613, org.springframework.test.context.support.DirtiesContextTestExecutionListener@198b6731, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7c6908d7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3c9754d8, org.springframework.test.context.event.EventPublishingTestExecutionListener@3bf7ca37]
+[2022-05-31 14:31:36.291] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:86) - =======================
+[2022-05-31 14:31:36.292] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:87) - =0. setUp()=
+[2022-05-31 14:31:36.292] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:88) - =======================
+[2022-05-31 14:31:36.294] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:93) - context:org.springframework.context.support.GenericApplicationContext@4c309d4d, started on Tue May 31 14:31:36 KST 2022
+[2022-05-31 14:31:36.294] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:94) - dao:com.pcwk.ehr.UserDao@64ec96c6
+[2022-05-31 14:31:36.294] DEBUG JunitUserDaoTest.addAndGet(JunitUserDaoTest.java:34) - =======================
+[2022-05-31 14:31:36.295] DEBUG JunitUserDaoTest.addAndGet(JunitUserDaoTest.java:35) - =1. setUp()=
+[2022-05-31 14:31:36.295] DEBUG JunitUserDaoTest.addAndGet(JunitUserDaoTest.java:36) - =======================
+[2022-05-31 14:31:36.953] DEBUG UserDao$1UserDaoDeleteAllStatement.makeStatement(UserDao.java:118) - =============================
+[2022-05-31 14:31:36.954] DEBUG UserDao$1UserDaoDeleteAllStatement.makeStatement(UserDao.java:119) - sql: 
+ DELETE FROM hr_member 
+
+[2022-05-31 14:31:36.954] DEBUG UserDao$1UserDaoDeleteAllStatement.makeStatement(UserDao.java:120) - =============================
+[2022-05-31 14:31:37.205] DEBUG UserDao.getCount(UserDao.java:43) - =============================
+[2022-05-31 14:31:37.206] DEBUG UserDao.getCount(UserDao.java:44) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:31:37.206] DEBUG UserDao.getCount(UserDao.java:45) - sql: 
+  SELECT COUNT(*) AS cnt    
+ FROM hr_member            
+ WHERE u_id LIKE ?  || '%' 
+
+[2022-05-31 14:31:37.206] DEBUG UserDao.getCount(UserDao.java:46) - =============================
+[2022-05-31 14:31:37.250] DEBUG UserDao.getCount(UserDao.java:59) - ====================
+[2022-05-31 14:31:37.250] DEBUG UserDao.getCount(UserDao.java:60) - =count=0
+[2022-05-31 14:31:37.250] DEBUG UserDao.getCount(UserDao.java:61) - ====================
+[2022-05-31 14:31:37.380] DEBUG UserDaoAddStatement.makeStatement(UserDaoAddStatement.java:35) - =============================
+[2022-05-31 14:31:37.380] DEBUG UserDaoAddStatement.makeStatement(UserDaoAddStatement.java:36) - param :UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:31:37.380] DEBUG UserDaoAddStatement.makeStatement(UserDaoAddStatement.java:37) - sql : 
+ INSERT INTO hr_member ( 
+     u_id,               
+     name,               
+     passwd              
+ ) VALUES (              
+     ?,                  
+     ?,                  
+     ?                   
+ )                       
+
+[2022-05-31 14:31:37.380] DEBUG UserDaoAddStatement.makeStatement(UserDaoAddStatement.java:38) - =============================
+[2022-05-31 14:31:37.514] DEBUG UserDao.getCount(UserDao.java:43) - =============================
+[2022-05-31 14:31:37.515] DEBUG UserDao.getCount(UserDao.java:44) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:31:37.515] DEBUG UserDao.getCount(UserDao.java:45) - sql: 
+  SELECT COUNT(*) AS cnt    
+ FROM hr_member            
+ WHERE u_id LIKE ?  || '%' 
+
+[2022-05-31 14:31:37.515] DEBUG UserDao.getCount(UserDao.java:46) - =============================
+[2022-05-31 14:31:37.527] DEBUG UserDao.getCount(UserDao.java:59) - ====================
+[2022-05-31 14:31:37.529] DEBUG UserDao.getCount(UserDao.java:60) - =count=1
+[2022-05-31 14:31:37.529] DEBUG UserDao.getCount(UserDao.java:61) - ====================
+[2022-05-31 14:31:37.672] DEBUG UserDaoAddStatement.makeStatement(UserDaoAddStatement.java:35) - =============================
+[2022-05-31 14:31:37.673] DEBUG UserDaoAddStatement.makeStatement(UserDaoAddStatement.java:36) - param :UserVO [uId=p070, name=김주혜070, passwd=4321]
+[2022-05-31 14:31:37.673] DEBUG UserDaoAddStatement.makeStatement(UserDaoAddStatement.java:37) - sql : 
+ INSERT INTO hr_member ( 
+     u_id,               
+     name,               
+     passwd              
+ ) VALUES (              
+     ?,                  
+     ?,                  
+     ?                   
+ )                       
+
+[2022-05-31 14:31:37.673] DEBUG UserDaoAddStatement.makeStatement(UserDaoAddStatement.java:38) - =============================
+[2022-05-31 14:31:37.868] DEBUG UserDao.getCount(UserDao.java:43) - =============================
+[2022-05-31 14:31:37.868] DEBUG UserDao.getCount(UserDao.java:44) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:31:37.868] DEBUG UserDao.getCount(UserDao.java:45) - sql: 
+  SELECT COUNT(*) AS cnt    
+ FROM hr_member            
+ WHERE u_id LIKE ?  || '%' 
+
+[2022-05-31 14:31:37.869] DEBUG UserDao.getCount(UserDao.java:46) - =============================
+[2022-05-31 14:31:37.875] DEBUG UserDao.getCount(UserDao.java:59) - ====================
+[2022-05-31 14:31:37.875] DEBUG UserDao.getCount(UserDao.java:60) - =count=2
+[2022-05-31 14:31:37.875] DEBUG UserDao.getCount(UserDao.java:61) - ====================
+[2022-05-31 14:31:38.042] DEBUG UserDao.get(UserDao.java:159) - =============================
+[2022-05-31 14:31:38.042] DEBUG UserDao.get(UserDao.java:160) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:31:38.042] DEBUG UserDao.get(UserDao.java:161) - sql: 
+  SELECT u_id,   
+        name,   
+        passwd  
+ FROM hr_member 
+ WHERE u_id = ? 
+
+[2022-05-31 14:31:38.043] DEBUG UserDao.get(UserDao.java:162) - =============================
+[2022-05-31 14:31:38.061] DEBUG UserDao.get(UserDao.java:183) - =============================
+[2022-05-31 14:31:38.061] DEBUG UserDao.get(UserDao.java:184) - =outVO=UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:31:38.061] DEBUG UserDao.get(UserDao.java:185) - =============================
+[2022-05-31 14:31:38.213] DEBUG UserDao.get(UserDao.java:159) - =============================
+[2022-05-31 14:31:38.213] DEBUG UserDao.get(UserDao.java:160) - param : UserVO [uId=p070, name=김주혜070, passwd=4321]
+[2022-05-31 14:31:38.213] DEBUG UserDao.get(UserDao.java:161) - sql: 
+  SELECT u_id,   
+        name,   
+        passwd  
+ FROM hr_member 
+ WHERE u_id = ? 
+
+[2022-05-31 14:31:38.213] DEBUG UserDao.get(UserDao.java:162) - =============================
+[2022-05-31 14:31:38.217] DEBUG UserDao.get(UserDao.java:183) - =============================
+[2022-05-31 14:31:38.218] DEBUG UserDao.get(UserDao.java:184) - =outVO=UserVO [uId=p070, name=김주혜070, passwd=4321]
+[2022-05-31 14:31:38.218] DEBUG UserDao.get(UserDao.java:185) - =============================
+[2022-05-31 14:31:38.226] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:102) - =======================
+[2022-05-31 14:31:38.226] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:103) - =9. tearDown()=
+[2022-05-31 14:31:38.226] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:104) - =======================
+[2022-05-31 14:31:38.228] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:86) - =======================
+[2022-05-31 14:31:38.228] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:87) - =0. setUp()=
+[2022-05-31 14:31:38.228] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:88) - =======================
+[2022-05-31 14:31:38.228] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:93) - context:org.springframework.context.support.GenericApplicationContext@4c309d4d, started on Tue May 31 14:31:36 KST 2022
+[2022-05-31 14:31:38.228] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:94) - dao:com.pcwk.ehr.UserDao@64ec96c6
+[2022-05-31 14:31:38.229] DEBUG JunitUserDaoTest.getFailure(JunitUserDaoTest.java:75) - =======================
+[2022-05-31 14:31:38.229] DEBUG JunitUserDaoTest.getFailure(JunitUserDaoTest.java:76) - =2. getFailure()=
+[2022-05-31 14:31:38.229] DEBUG JunitUserDaoTest.getFailure(JunitUserDaoTest.java:77) - =======================
+[2022-05-31 14:31:38.355] DEBUG UserDao$1UserDaoDeleteAllStatement.makeStatement(UserDao.java:118) - =============================
+[2022-05-31 14:31:38.355] DEBUG UserDao$1UserDaoDeleteAllStatement.makeStatement(UserDao.java:119) - sql: 
+ DELETE FROM hr_member 
+
+[2022-05-31 14:31:38.355] DEBUG UserDao$1UserDaoDeleteAllStatement.makeStatement(UserDao.java:120) - =============================
+[2022-05-31 14:31:38.509] DEBUG UserDao.get(UserDao.java:159) - =============================
+[2022-05-31 14:31:38.510] DEBUG UserDao.get(UserDao.java:160) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:31:38.510] DEBUG UserDao.get(UserDao.java:161) - sql: 
+  SELECT u_id,   
+        name,   
+        passwd  
+ FROM hr_member 
+ WHERE u_id = ? 
+
+[2022-05-31 14:31:38.510] DEBUG UserDao.get(UserDao.java:162) - =============================
+[2022-05-31 14:31:38.518] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:102) - =======================
+[2022-05-31 14:31:38.519] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:103) - =9. tearDown()=
+[2022-05-31 14:31:38.519] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:104) - =======================
+[2022-05-31 14:37:38.406] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-05-31 14:37:38.415] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@15de0b3c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@489115ef, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3857f613, org.springframework.test.context.support.DirtiesContextTestExecutionListener@198b6731, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7c6908d7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3c9754d8, org.springframework.test.context.event.EventPublishingTestExecutionListener@3bf7ca37]
+[2022-05-31 14:37:38.653] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:86) - =======================
+[2022-05-31 14:37:38.654] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:87) - =0. setUp()=
+[2022-05-31 14:37:38.654] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:88) - =======================
+[2022-05-31 14:37:38.656] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:93) - context:org.springframework.context.support.GenericApplicationContext@4c309d4d, started on Tue May 31 14:37:38 KST 2022
+[2022-05-31 14:37:38.656] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:94) - dao:com.pcwk.ehr.UserDao@64ec96c6
+[2022-05-31 14:37:38.657] DEBUG JunitUserDaoTest.addAndGet(JunitUserDaoTest.java:34) - =======================
+[2022-05-31 14:37:38.657] DEBUG JunitUserDaoTest.addAndGet(JunitUserDaoTest.java:35) - =1. setUp()=
+[2022-05-31 14:37:38.657] DEBUG JunitUserDaoTest.addAndGet(JunitUserDaoTest.java:36) - =======================
+[2022-05-31 14:37:39.682] DEBUG UserDao$1UserDaoDeleteAllStatement.makeStatement(UserDao.java:118) - =============================
+[2022-05-31 14:37:39.682] DEBUG UserDao$1UserDaoDeleteAllStatement.makeStatement(UserDao.java:119) - sql: 
+ DELETE FROM hr_member 
+
+[2022-05-31 14:37:39.683] DEBUG UserDao$1UserDaoDeleteAllStatement.makeStatement(UserDao.java:120) - =============================
+[2022-05-31 14:37:40.086] DEBUG UserDao.getCount(UserDao.java:43) - =============================
+[2022-05-31 14:37:40.087] DEBUG UserDao.getCount(UserDao.java:44) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:37:40.087] DEBUG UserDao.getCount(UserDao.java:45) - sql: 
+  SELECT COUNT(*) AS cnt    
+ FROM hr_member            
+ WHERE u_id LIKE ?  || '%' 
+
+[2022-05-31 14:37:40.088] DEBUG UserDao.getCount(UserDao.java:46) - =============================
+[2022-05-31 14:37:40.156] DEBUG UserDao.getCount(UserDao.java:59) - ====================
+[2022-05-31 14:37:40.157] DEBUG UserDao.getCount(UserDao.java:60) - =count=0
+[2022-05-31 14:37:40.157] DEBUG UserDao.getCount(UserDao.java:61) - ====================
+[2022-05-31 14:37:40.495] DEBUG UserDao$1UserDaoAddStatement.makeStatement(UserDao.java:226) - =============================
+[2022-05-31 14:37:40.495] DEBUG UserDao$1UserDaoAddStatement.makeStatement(UserDao.java:227) - param :UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:37:40.495] DEBUG UserDao$1UserDaoAddStatement.makeStatement(UserDao.java:228) - sql : 
+ INSERT INTO hr_member ( 
+     u_id,               
+     name,               
+     passwd              
+ ) VALUES (              
+     ?,                  
+     ?,                  
+     ?                   
+ )                       
+
+[2022-05-31 14:37:40.496] DEBUG UserDao$1UserDaoAddStatement.makeStatement(UserDao.java:229) - =============================
+[2022-05-31 14:37:40.895] DEBUG UserDao.getCount(UserDao.java:43) - =============================
+[2022-05-31 14:37:40.895] DEBUG UserDao.getCount(UserDao.java:44) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:37:40.895] DEBUG UserDao.getCount(UserDao.java:45) - sql: 
+  SELECT COUNT(*) AS cnt    
+ FROM hr_member            
+ WHERE u_id LIKE ?  || '%' 
+
+[2022-05-31 14:37:40.895] DEBUG UserDao.getCount(UserDao.java:46) - =============================
+[2022-05-31 14:37:40.919] DEBUG UserDao.getCount(UserDao.java:59) - ====================
+[2022-05-31 14:37:40.922] DEBUG UserDao.getCount(UserDao.java:60) - =count=1
+[2022-05-31 14:37:40.922] DEBUG UserDao.getCount(UserDao.java:61) - ====================
+[2022-05-31 14:37:41.184] DEBUG UserDao$1UserDaoAddStatement.makeStatement(UserDao.java:226) - =============================
+[2022-05-31 14:37:41.184] DEBUG UserDao$1UserDaoAddStatement.makeStatement(UserDao.java:227) - param :UserVO [uId=p070, name=김주혜070, passwd=4321]
+[2022-05-31 14:37:41.184] DEBUG UserDao$1UserDaoAddStatement.makeStatement(UserDao.java:228) - sql : 
+ INSERT INTO hr_member ( 
+     u_id,               
+     name,               
+     passwd              
+ ) VALUES (              
+     ?,                  
+     ?,                  
+     ?                   
+ )                       
+
+[2022-05-31 14:37:41.185] DEBUG UserDao$1UserDaoAddStatement.makeStatement(UserDao.java:229) - =============================
+[2022-05-31 14:37:41.317] DEBUG UserDao.getCount(UserDao.java:43) - =============================
+[2022-05-31 14:37:41.317] DEBUG UserDao.getCount(UserDao.java:44) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:37:41.317] DEBUG UserDao.getCount(UserDao.java:45) - sql: 
+  SELECT COUNT(*) AS cnt    
+ FROM hr_member            
+ WHERE u_id LIKE ?  || '%' 
+
+[2022-05-31 14:37:41.317] DEBUG UserDao.getCount(UserDao.java:46) - =============================
+[2022-05-31 14:37:41.348] DEBUG UserDao.getCount(UserDao.java:59) - ====================
+[2022-05-31 14:37:41.348] DEBUG UserDao.getCount(UserDao.java:60) - =count=2
+[2022-05-31 14:37:41.348] DEBUG UserDao.getCount(UserDao.java:61) - ====================
+[2022-05-31 14:37:41.536] DEBUG UserDao.get(UserDao.java:159) - =============================
+[2022-05-31 14:37:41.537] DEBUG UserDao.get(UserDao.java:160) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:37:41.537] DEBUG UserDao.get(UserDao.java:161) - sql: 
+  SELECT u_id,   
+        name,   
+        passwd  
+ FROM hr_member 
+ WHERE u_id = ? 
+
+[2022-05-31 14:37:41.538] DEBUG UserDao.get(UserDao.java:162) - =============================
+[2022-05-31 14:37:41.555] DEBUG UserDao.get(UserDao.java:183) - =============================
+[2022-05-31 14:37:41.555] DEBUG UserDao.get(UserDao.java:184) - =outVO=UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:37:41.555] DEBUG UserDao.get(UserDao.java:185) - =============================
+[2022-05-31 14:37:41.757] DEBUG UserDao.get(UserDao.java:159) - =============================
+[2022-05-31 14:37:41.758] DEBUG UserDao.get(UserDao.java:160) - param : UserVO [uId=p070, name=김주혜070, passwd=4321]
+[2022-05-31 14:37:41.758] DEBUG UserDao.get(UserDao.java:161) - sql: 
+  SELECT u_id,   
+        name,   
+        passwd  
+ FROM hr_member 
+ WHERE u_id = ? 
+
+[2022-05-31 14:37:41.758] DEBUG UserDao.get(UserDao.java:162) - =============================
+[2022-05-31 14:37:41.773] DEBUG UserDao.get(UserDao.java:183) - =============================
+[2022-05-31 14:37:41.773] DEBUG UserDao.get(UserDao.java:184) - =outVO=UserVO [uId=p070, name=김주혜070, passwd=4321]
+[2022-05-31 14:37:41.773] DEBUG UserDao.get(UserDao.java:185) - =============================
+[2022-05-31 14:37:41.777] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:102) - =======================
+[2022-05-31 14:37:41.777] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:103) - =9. tearDown()=
+[2022-05-31 14:37:41.777] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:104) - =======================
+[2022-05-31 14:37:41.779] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:86) - =======================
+[2022-05-31 14:37:41.780] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:87) - =0. setUp()=
+[2022-05-31 14:37:41.780] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:88) - =======================
+[2022-05-31 14:37:41.780] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:93) - context:org.springframework.context.support.GenericApplicationContext@4c309d4d, started on Tue May 31 14:37:38 KST 2022
+[2022-05-31 14:37:41.780] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:94) - dao:com.pcwk.ehr.UserDao@64ec96c6
+[2022-05-31 14:37:41.780] DEBUG JunitUserDaoTest.getFailure(JunitUserDaoTest.java:75) - =======================
+[2022-05-31 14:37:41.780] DEBUG JunitUserDaoTest.getFailure(JunitUserDaoTest.java:76) - =2. getFailure()=
+[2022-05-31 14:37:41.780] DEBUG JunitUserDaoTest.getFailure(JunitUserDaoTest.java:77) - =======================
+[2022-05-31 14:37:42.078] DEBUG UserDao$1UserDaoDeleteAllStatement.makeStatement(UserDao.java:118) - =============================
+[2022-05-31 14:37:42.078] DEBUG UserDao$1UserDaoDeleteAllStatement.makeStatement(UserDao.java:119) - sql: 
+ DELETE FROM hr_member 
+
+[2022-05-31 14:37:42.079] DEBUG UserDao$1UserDaoDeleteAllStatement.makeStatement(UserDao.java:120) - =============================
+[2022-05-31 14:37:42.265] DEBUG UserDao.get(UserDao.java:159) - =============================
+[2022-05-31 14:37:42.265] DEBUG UserDao.get(UserDao.java:160) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:37:42.265] DEBUG UserDao.get(UserDao.java:161) - sql: 
+  SELECT u_id,   
+        name,   
+        passwd  
+ FROM hr_member 
+ WHERE u_id = ? 
+
+[2022-05-31 14:37:42.266] DEBUG UserDao.get(UserDao.java:162) - =============================
+[2022-05-31 14:37:42.274] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:102) - =======================
+[2022-05-31 14:37:42.274] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:103) - =9. tearDown()=
+[2022-05-31 14:37:42.274] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:104) - =======================
+[2022-05-31 14:46:41.418] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-05-31 14:46:41.427] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@15de0b3c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@489115ef, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3857f613, org.springframework.test.context.support.DirtiesContextTestExecutionListener@198b6731, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7c6908d7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3c9754d8, org.springframework.test.context.event.EventPublishingTestExecutionListener@3bf7ca37]
+[2022-05-31 14:46:41.667] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:86) - =======================
+[2022-05-31 14:46:41.667] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:87) - =0. setUp()=
+[2022-05-31 14:46:41.668] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:88) - =======================
+[2022-05-31 14:46:41.669] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:93) - context:org.springframework.context.support.GenericApplicationContext@4c309d4d, started on Tue May 31 14:46:41 KST 2022
+[2022-05-31 14:46:41.670] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:94) - dao:com.pcwk.ehr.UserDao@64ec96c6
+[2022-05-31 14:46:41.671] DEBUG JunitUserDaoTest.addAndGet(JunitUserDaoTest.java:34) - =======================
+[2022-05-31 14:46:41.671] DEBUG JunitUserDaoTest.addAndGet(JunitUserDaoTest.java:35) - =1. setUp()=
+[2022-05-31 14:46:41.671] DEBUG JunitUserDaoTest.addAndGet(JunitUserDaoTest.java:36) - =======================
+[2022-05-31 14:46:42.540] DEBUG UserDao$1.makeStatement(UserDao.java:116) - =============================
+[2022-05-31 14:46:42.540] DEBUG UserDao$1.makeStatement(UserDao.java:117) - sql: 
+ DELETE FROM hr_member 
+
+[2022-05-31 14:46:42.540] DEBUG UserDao$1.makeStatement(UserDao.java:118) - =============================
+[2022-05-31 14:46:42.791] DEBUG UserDao.getCount(UserDao.java:43) - =============================
+[2022-05-31 14:46:42.791] DEBUG UserDao.getCount(UserDao.java:44) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:46:42.791] DEBUG UserDao.getCount(UserDao.java:45) - sql: 
+  SELECT COUNT(*) AS cnt    
+ FROM hr_member            
+ WHERE u_id LIKE ?  || '%' 
+
+[2022-05-31 14:46:42.792] DEBUG UserDao.getCount(UserDao.java:46) - =============================
+[2022-05-31 14:46:42.839] DEBUG UserDao.getCount(UserDao.java:59) - ====================
+[2022-05-31 14:46:42.839] DEBUG UserDao.getCount(UserDao.java:60) - =count=0
+[2022-05-31 14:46:42.839] DEBUG UserDao.getCount(UserDao.java:61) - ====================
+[2022-05-31 14:46:43.002] DEBUG UserDao$1UserDaoAddStatement.makeStatement(UserDao.java:224) - =============================
+[2022-05-31 14:46:43.002] DEBUG UserDao$1UserDaoAddStatement.makeStatement(UserDao.java:225) - param :UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:46:43.003] DEBUG UserDao$1UserDaoAddStatement.makeStatement(UserDao.java:226) - sql : 
+ INSERT INTO hr_member ( 
+     u_id,               
+     name,               
+     passwd              
+ ) VALUES (              
+     ?,                  
+     ?,                  
+     ?                   
+ )                       
+
+[2022-05-31 14:46:43.003] DEBUG UserDao$1UserDaoAddStatement.makeStatement(UserDao.java:227) - =============================
+[2022-05-31 14:46:43.171] DEBUG UserDao.getCount(UserDao.java:43) - =============================
+[2022-05-31 14:46:43.171] DEBUG UserDao.getCount(UserDao.java:44) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:46:43.171] DEBUG UserDao.getCount(UserDao.java:45) - sql: 
+  SELECT COUNT(*) AS cnt    
+ FROM hr_member            
+ WHERE u_id LIKE ?  || '%' 
+
+[2022-05-31 14:46:43.171] DEBUG UserDao.getCount(UserDao.java:46) - =============================
+[2022-05-31 14:46:43.188] DEBUG UserDao.getCount(UserDao.java:59) - ====================
+[2022-05-31 14:46:43.190] DEBUG UserDao.getCount(UserDao.java:60) - =count=1
+[2022-05-31 14:46:43.191] DEBUG UserDao.getCount(UserDao.java:61) - ====================
+[2022-05-31 14:46:43.360] DEBUG UserDao$1UserDaoAddStatement.makeStatement(UserDao.java:224) - =============================
+[2022-05-31 14:46:43.360] DEBUG UserDao$1UserDaoAddStatement.makeStatement(UserDao.java:225) - param :UserVO [uId=p070, name=김주혜070, passwd=4321]
+[2022-05-31 14:46:43.360] DEBUG UserDao$1UserDaoAddStatement.makeStatement(UserDao.java:226) - sql : 
+ INSERT INTO hr_member ( 
+     u_id,               
+     name,               
+     passwd              
+ ) VALUES (              
+     ?,                  
+     ?,                  
+     ?                   
+ )                       
+
+[2022-05-31 14:46:43.361] DEBUG UserDao$1UserDaoAddStatement.makeStatement(UserDao.java:227) - =============================
+[2022-05-31 14:46:43.556] DEBUG UserDao.getCount(UserDao.java:43) - =============================
+[2022-05-31 14:46:43.556] DEBUG UserDao.getCount(UserDao.java:44) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:46:43.556] DEBUG UserDao.getCount(UserDao.java:45) - sql: 
+  SELECT COUNT(*) AS cnt    
+ FROM hr_member            
+ WHERE u_id LIKE ?  || '%' 
+
+[2022-05-31 14:46:43.557] DEBUG UserDao.getCount(UserDao.java:46) - =============================
+[2022-05-31 14:46:43.576] DEBUG UserDao.getCount(UserDao.java:59) - ====================
+[2022-05-31 14:46:43.576] DEBUG UserDao.getCount(UserDao.java:60) - =count=2
+[2022-05-31 14:46:43.577] DEBUG UserDao.getCount(UserDao.java:61) - ====================
+[2022-05-31 14:46:43.703] DEBUG UserDao.get(UserDao.java:157) - =============================
+[2022-05-31 14:46:43.704] DEBUG UserDao.get(UserDao.java:158) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:46:43.704] DEBUG UserDao.get(UserDao.java:159) - sql: 
+  SELECT u_id,   
+        name,   
+        passwd  
+ FROM hr_member 
+ WHERE u_id = ? 
+
+[2022-05-31 14:46:43.704] DEBUG UserDao.get(UserDao.java:160) - =============================
+[2022-05-31 14:46:43.717] DEBUG UserDao.get(UserDao.java:181) - =============================
+[2022-05-31 14:46:43.717] DEBUG UserDao.get(UserDao.java:182) - =outVO=UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:46:43.717] DEBUG UserDao.get(UserDao.java:183) - =============================
+[2022-05-31 14:46:44.946] DEBUG UserDao.get(UserDao.java:157) - =============================
+[2022-05-31 14:46:44.946] DEBUG UserDao.get(UserDao.java:158) - param : UserVO [uId=p070, name=김주혜070, passwd=4321]
+[2022-05-31 14:46:44.946] DEBUG UserDao.get(UserDao.java:159) - sql: 
+  SELECT u_id,   
+        name,   
+        passwd  
+ FROM hr_member 
+ WHERE u_id = ? 
+
+[2022-05-31 14:46:44.946] DEBUG UserDao.get(UserDao.java:160) - =============================
+[2022-05-31 14:46:44.954] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:102) - =======================
+[2022-05-31 14:46:44.954] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:103) - =9. tearDown()=
+[2022-05-31 14:46:44.954] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:104) - =======================
+[2022-05-31 14:46:44.959] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:86) - =======================
+[2022-05-31 14:46:44.959] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:87) - =0. setUp()=
+[2022-05-31 14:46:44.959] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:88) - =======================
+[2022-05-31 14:46:44.960] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:93) - context:org.springframework.context.support.GenericApplicationContext@4c309d4d, started on Tue May 31 14:46:41 KST 2022
+[2022-05-31 14:46:44.960] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:94) - dao:com.pcwk.ehr.UserDao@64ec96c6
+[2022-05-31 14:46:44.960] DEBUG JunitUserDaoTest.getFailure(JunitUserDaoTest.java:75) - =======================
+[2022-05-31 14:46:44.960] DEBUG JunitUserDaoTest.getFailure(JunitUserDaoTest.java:76) - =2. getFailure()=
+[2022-05-31 14:46:44.960] DEBUG JunitUserDaoTest.getFailure(JunitUserDaoTest.java:77) - =======================
+[2022-05-31 14:46:45.104] DEBUG UserDao$1.makeStatement(UserDao.java:116) - =============================
+[2022-05-31 14:46:45.104] DEBUG UserDao$1.makeStatement(UserDao.java:117) - sql: 
+ DELETE FROM hr_member 
+
+[2022-05-31 14:46:45.104] DEBUG UserDao$1.makeStatement(UserDao.java:118) - =============================
+[2022-05-31 14:46:45.255] DEBUG UserDao.get(UserDao.java:157) - =============================
+[2022-05-31 14:46:45.256] DEBUG UserDao.get(UserDao.java:158) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:46:45.256] DEBUG UserDao.get(UserDao.java:159) - sql: 
+  SELECT u_id,   
+        name,   
+        passwd  
+ FROM hr_member 
+ WHERE u_id = ? 
+
+[2022-05-31 14:46:45.256] DEBUG UserDao.get(UserDao.java:160) - =============================
+[2022-05-31 14:46:45.292] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:102) - =======================
+[2022-05-31 14:46:45.292] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:103) - =9. tearDown()=
+[2022-05-31 14:46:45.292] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:104) - =======================
+[2022-05-31 14:46:48.794] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-05-31 14:46:48.803] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@15de0b3c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@489115ef, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3857f613, org.springframework.test.context.support.DirtiesContextTestExecutionListener@198b6731, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7c6908d7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3c9754d8, org.springframework.test.context.event.EventPublishingTestExecutionListener@3bf7ca37]
+[2022-05-31 14:46:49.036] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:86) - =======================
+[2022-05-31 14:46:49.036] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:87) - =0. setUp()=
+[2022-05-31 14:46:49.036] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:88) - =======================
+[2022-05-31 14:46:49.038] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:93) - context:org.springframework.context.support.GenericApplicationContext@4c309d4d, started on Tue May 31 14:46:48 KST 2022
+[2022-05-31 14:46:49.038] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:94) - dao:com.pcwk.ehr.UserDao@64ec96c6
+[2022-05-31 14:46:49.039] DEBUG JunitUserDaoTest.addAndGet(JunitUserDaoTest.java:34) - =======================
+[2022-05-31 14:46:49.039] DEBUG JunitUserDaoTest.addAndGet(JunitUserDaoTest.java:35) - =1. setUp()=
+[2022-05-31 14:46:49.039] DEBUG JunitUserDaoTest.addAndGet(JunitUserDaoTest.java:36) - =======================
+[2022-05-31 14:46:50.200] DEBUG UserDao$1.makeStatement(UserDao.java:116) - =============================
+[2022-05-31 14:46:50.201] DEBUG UserDao$1.makeStatement(UserDao.java:117) - sql: 
+ DELETE FROM hr_member 
+
+[2022-05-31 14:46:50.201] DEBUG UserDao$1.makeStatement(UserDao.java:118) - =============================
+[2022-05-31 14:46:50.399] DEBUG UserDao.getCount(UserDao.java:43) - =============================
+[2022-05-31 14:46:50.399] DEBUG UserDao.getCount(UserDao.java:44) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:46:50.399] DEBUG UserDao.getCount(UserDao.java:45) - sql: 
+  SELECT COUNT(*) AS cnt    
+ FROM hr_member            
+ WHERE u_id LIKE ?  || '%' 
+
+[2022-05-31 14:46:50.399] DEBUG UserDao.getCount(UserDao.java:46) - =============================
+[2022-05-31 14:46:50.434] DEBUG UserDao.getCount(UserDao.java:59) - ====================
+[2022-05-31 14:46:50.434] DEBUG UserDao.getCount(UserDao.java:60) - =count=0
+[2022-05-31 14:46:50.434] DEBUG UserDao.getCount(UserDao.java:61) - ====================
+[2022-05-31 14:46:51.090] DEBUG UserDao$1UserDaoAddStatement.makeStatement(UserDao.java:224) - =============================
+[2022-05-31 14:46:51.091] DEBUG UserDao$1UserDaoAddStatement.makeStatement(UserDao.java:225) - param :UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:46:51.091] DEBUG UserDao$1UserDaoAddStatement.makeStatement(UserDao.java:226) - sql : 
+ INSERT INTO hr_member ( 
+     u_id,               
+     name,               
+     passwd              
+ ) VALUES (              
+     ?,                  
+     ?,                  
+     ?                   
+ )                       
+
+[2022-05-31 14:46:51.091] DEBUG UserDao$1UserDaoAddStatement.makeStatement(UserDao.java:227) - =============================
+[2022-05-31 14:46:51.346] DEBUG UserDao.getCount(UserDao.java:43) - =============================
+[2022-05-31 14:46:51.346] DEBUG UserDao.getCount(UserDao.java:44) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:46:51.346] DEBUG UserDao.getCount(UserDao.java:45) - sql: 
+  SELECT COUNT(*) AS cnt    
+ FROM hr_member            
+ WHERE u_id LIKE ?  || '%' 
+
+[2022-05-31 14:46:51.347] DEBUG UserDao.getCount(UserDao.java:46) - =============================
+[2022-05-31 14:46:51.965] DEBUG UserDao.getCount(UserDao.java:59) - ====================
+[2022-05-31 14:46:51.970] DEBUG UserDao.getCount(UserDao.java:60) - =count=1
+[2022-05-31 14:46:51.971] DEBUG UserDao.getCount(UserDao.java:61) - ====================
+[2022-05-31 14:46:53.364] DEBUG UserDao$1UserDaoAddStatement.makeStatement(UserDao.java:224) - =============================
+[2022-05-31 14:46:53.364] DEBUG UserDao$1UserDaoAddStatement.makeStatement(UserDao.java:225) - param :UserVO [uId=p070, name=김주혜070, passwd=4321]
+[2022-05-31 14:46:53.365] DEBUG UserDao$1UserDaoAddStatement.makeStatement(UserDao.java:226) - sql : 
+ INSERT INTO hr_member ( 
+     u_id,               
+     name,               
+     passwd              
+ ) VALUES (              
+     ?,                  
+     ?,                  
+     ?                   
+ )                       
+
+[2022-05-31 14:46:53.365] DEBUG UserDao$1UserDaoAddStatement.makeStatement(UserDao.java:227) - =============================
+[2022-05-31 14:46:53.492] DEBUG UserDao.getCount(UserDao.java:43) - =============================
+[2022-05-31 14:46:53.492] DEBUG UserDao.getCount(UserDao.java:44) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:46:53.492] DEBUG UserDao.getCount(UserDao.java:45) - sql: 
+  SELECT COUNT(*) AS cnt    
+ FROM hr_member            
+ WHERE u_id LIKE ?  || '%' 
+
+[2022-05-31 14:46:53.493] DEBUG UserDao.getCount(UserDao.java:46) - =============================
+[2022-05-31 14:46:53.497] DEBUG UserDao.getCount(UserDao.java:59) - ====================
+[2022-05-31 14:46:53.498] DEBUG UserDao.getCount(UserDao.java:60) - =count=1
+[2022-05-31 14:46:53.498] DEBUG UserDao.getCount(UserDao.java:61) - ====================
+[2022-05-31 14:46:53.516] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:102) - =======================
+[2022-05-31 14:46:53.517] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:103) - =9. tearDown()=
+[2022-05-31 14:46:53.517] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:104) - =======================
+[2022-05-31 14:46:53.525] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:86) - =======================
+[2022-05-31 14:46:53.525] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:87) - =0. setUp()=
+[2022-05-31 14:46:53.525] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:88) - =======================
+[2022-05-31 14:46:53.525] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:93) - context:org.springframework.context.support.GenericApplicationContext@4c309d4d, started on Tue May 31 14:46:48 KST 2022
+[2022-05-31 14:46:53.525] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:94) - dao:com.pcwk.ehr.UserDao@64ec96c6
+[2022-05-31 14:46:53.526] DEBUG JunitUserDaoTest.getFailure(JunitUserDaoTest.java:75) - =======================
+[2022-05-31 14:46:53.526] DEBUG JunitUserDaoTest.getFailure(JunitUserDaoTest.java:76) - =2. getFailure()=
+[2022-05-31 14:46:53.526] DEBUG JunitUserDaoTest.getFailure(JunitUserDaoTest.java:77) - =======================
+[2022-05-31 14:46:53.685] DEBUG UserDao$1.makeStatement(UserDao.java:116) - =============================
+[2022-05-31 14:46:53.685] DEBUG UserDao$1.makeStatement(UserDao.java:117) - sql: 
+ DELETE FROM hr_member 
+
+[2022-05-31 14:46:53.685] DEBUG UserDao$1.makeStatement(UserDao.java:118) - =============================
+[2022-05-31 14:46:53.804] DEBUG UserDao.get(UserDao.java:157) - =============================
+[2022-05-31 14:46:53.804] DEBUG UserDao.get(UserDao.java:158) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:46:53.805] DEBUG UserDao.get(UserDao.java:159) - sql: 
+  SELECT u_id,   
+        name,   
+        passwd  
+ FROM hr_member 
+ WHERE u_id = ? 
+
+[2022-05-31 14:46:53.805] DEBUG UserDao.get(UserDao.java:160) - =============================
+[2022-05-31 14:46:53.813] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:102) - =======================
+[2022-05-31 14:46:53.814] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:103) - =9. tearDown()=
+[2022-05-31 14:46:53.814] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:104) - =======================
+[2022-05-31 14:46:56.622] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-05-31 14:46:56.630] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@15de0b3c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@489115ef, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3857f613, org.springframework.test.context.support.DirtiesContextTestExecutionListener@198b6731, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7c6908d7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3c9754d8, org.springframework.test.context.event.EventPublishingTestExecutionListener@3bf7ca37]
+[2022-05-31 14:46:56.883] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:86) - =======================
+[2022-05-31 14:46:56.884] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:87) - =0. setUp()=
+[2022-05-31 14:46:56.884] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:88) - =======================
+[2022-05-31 14:46:56.886] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:93) - context:org.springframework.context.support.GenericApplicationContext@4c309d4d, started on Tue May 31 14:46:56 KST 2022
+[2022-05-31 14:46:56.887] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:94) - dao:com.pcwk.ehr.UserDao@64ec96c6
+[2022-05-31 14:46:56.887] DEBUG JunitUserDaoTest.addAndGet(JunitUserDaoTest.java:34) - =======================
+[2022-05-31 14:46:56.888] DEBUG JunitUserDaoTest.addAndGet(JunitUserDaoTest.java:35) - =1. setUp()=
+[2022-05-31 14:46:56.888] DEBUG JunitUserDaoTest.addAndGet(JunitUserDaoTest.java:36) - =======================
+[2022-05-31 14:46:59.020] DEBUG UserDao$1.makeStatement(UserDao.java:116) - =============================
+[2022-05-31 14:46:59.020] DEBUG UserDao$1.makeStatement(UserDao.java:117) - sql: 
+ DELETE FROM hr_member 
+
+[2022-05-31 14:46:59.021] DEBUG UserDao$1.makeStatement(UserDao.java:118) - =============================
+[2022-05-31 14:47:00.695] DEBUG UserDao.getCount(UserDao.java:43) - =============================
+[2022-05-31 14:47:00.695] DEBUG UserDao.getCount(UserDao.java:44) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:47:00.695] DEBUG UserDao.getCount(UserDao.java:45) - sql: 
+  SELECT COUNT(*) AS cnt    
+ FROM hr_member            
+ WHERE u_id LIKE ?  || '%' 
+
+[2022-05-31 14:47:00.696] DEBUG UserDao.getCount(UserDao.java:46) - =============================
+[2022-05-31 14:47:00.744] DEBUG UserDao.getCount(UserDao.java:59) - ====================
+[2022-05-31 14:47:00.745] DEBUG UserDao.getCount(UserDao.java:60) - =count=0
+[2022-05-31 14:47:00.745] DEBUG UserDao.getCount(UserDao.java:61) - ====================
+[2022-05-31 14:47:01.486] DEBUG UserDao$1UserDaoAddStatement.makeStatement(UserDao.java:224) - =============================
+[2022-05-31 14:47:01.486] DEBUG UserDao$1UserDaoAddStatement.makeStatement(UserDao.java:225) - param :UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:47:01.487] DEBUG UserDao$1UserDaoAddStatement.makeStatement(UserDao.java:226) - sql : 
+ INSERT INTO hr_member ( 
+     u_id,               
+     name,               
+     passwd              
+ ) VALUES (              
+     ?,                  
+     ?,                  
+     ?                   
+ )                       
+
+[2022-05-31 14:47:01.487] DEBUG UserDao$1UserDaoAddStatement.makeStatement(UserDao.java:227) - =============================
+[2022-05-31 14:47:01.749] DEBUG UserDao.getCount(UserDao.java:43) - =============================
+[2022-05-31 14:47:01.749] DEBUG UserDao.getCount(UserDao.java:44) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:47:01.749] DEBUG UserDao.getCount(UserDao.java:45) - sql: 
+  SELECT COUNT(*) AS cnt    
+ FROM hr_member            
+ WHERE u_id LIKE ?  || '%' 
+
+[2022-05-31 14:47:01.749] DEBUG UserDao.getCount(UserDao.java:46) - =============================
+[2022-05-31 14:47:01.753] DEBUG UserDao.getCount(UserDao.java:59) - ====================
+[2022-05-31 14:47:01.753] DEBUG UserDao.getCount(UserDao.java:60) - =count=1
+[2022-05-31 14:47:01.753] DEBUG UserDao.getCount(UserDao.java:61) - ====================
+[2022-05-31 14:47:01.924] DEBUG UserDao$1UserDaoAddStatement.makeStatement(UserDao.java:224) - =============================
+[2022-05-31 14:47:01.925] DEBUG UserDao$1UserDaoAddStatement.makeStatement(UserDao.java:225) - param :UserVO [uId=p070, name=김주혜070, passwd=4321]
+[2022-05-31 14:47:01.925] DEBUG UserDao$1UserDaoAddStatement.makeStatement(UserDao.java:226) - sql : 
+ INSERT INTO hr_member ( 
+     u_id,               
+     name,               
+     passwd              
+ ) VALUES (              
+     ?,                  
+     ?,                  
+     ?                   
+ )                       
+
+[2022-05-31 14:47:01.926] DEBUG UserDao$1UserDaoAddStatement.makeStatement(UserDao.java:227) - =============================
+[2022-05-31 14:47:02.120] DEBUG UserDao.getCount(UserDao.java:43) - =============================
+[2022-05-31 14:47:02.120] DEBUG UserDao.getCount(UserDao.java:44) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:47:02.120] DEBUG UserDao.getCount(UserDao.java:45) - sql: 
+  SELECT COUNT(*) AS cnt    
+ FROM hr_member            
+ WHERE u_id LIKE ?  || '%' 
+
+[2022-05-31 14:47:02.121] DEBUG UserDao.getCount(UserDao.java:46) - =============================
+[2022-05-31 14:47:02.126] DEBUG UserDao.getCount(UserDao.java:59) - ====================
+[2022-05-31 14:47:02.126] DEBUG UserDao.getCount(UserDao.java:60) - =count=2
+[2022-05-31 14:47:02.127] DEBUG UserDao.getCount(UserDao.java:61) - ====================
+[2022-05-31 14:47:02.233] DEBUG UserDao.get(UserDao.java:157) - =============================
+[2022-05-31 14:47:02.234] DEBUG UserDao.get(UserDao.java:158) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:47:02.234] DEBUG UserDao.get(UserDao.java:159) - sql: 
+  SELECT u_id,   
+        name,   
+        passwd  
+ FROM hr_member 
+ WHERE u_id = ? 
+
+[2022-05-31 14:47:02.234] DEBUG UserDao.get(UserDao.java:160) - =============================
+[2022-05-31 14:47:02.254] DEBUG UserDao.get(UserDao.java:181) - =============================
+[2022-05-31 14:47:02.254] DEBUG UserDao.get(UserDao.java:182) - =outVO=UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:47:02.254] DEBUG UserDao.get(UserDao.java:183) - =============================
+[2022-05-31 14:47:02.794] DEBUG UserDao.get(UserDao.java:157) - =============================
+[2022-05-31 14:47:02.795] DEBUG UserDao.get(UserDao.java:158) - param : UserVO [uId=p070, name=김주혜070, passwd=4321]
+[2022-05-31 14:47:02.795] DEBUG UserDao.get(UserDao.java:159) - sql: 
+  SELECT u_id,   
+        name,   
+        passwd  
+ FROM hr_member 
+ WHERE u_id = ? 
+
+[2022-05-31 14:47:02.795] DEBUG UserDao.get(UserDao.java:160) - =============================
+[2022-05-31 14:47:02.803] DEBUG UserDao.get(UserDao.java:181) - =============================
+[2022-05-31 14:47:02.803] DEBUG UserDao.get(UserDao.java:182) - =outVO=UserVO [uId=p070, name=김주혜070, passwd=4321]
+[2022-05-31 14:47:02.803] DEBUG UserDao.get(UserDao.java:183) - =============================
+[2022-05-31 14:47:02.817] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:102) - =======================
+[2022-05-31 14:47:02.817] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:103) - =9. tearDown()=
+[2022-05-31 14:47:02.817] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:104) - =======================
+[2022-05-31 14:47:02.819] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:86) - =======================
+[2022-05-31 14:47:02.819] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:87) - =0. setUp()=
+[2022-05-31 14:47:02.819] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:88) - =======================
+[2022-05-31 14:47:02.819] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:93) - context:org.springframework.context.support.GenericApplicationContext@4c309d4d, started on Tue May 31 14:46:56 KST 2022
+[2022-05-31 14:47:02.819] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:94) - dao:com.pcwk.ehr.UserDao@64ec96c6
+[2022-05-31 14:47:02.820] DEBUG JunitUserDaoTest.getFailure(JunitUserDaoTest.java:75) - =======================
+[2022-05-31 14:47:02.820] DEBUG JunitUserDaoTest.getFailure(JunitUserDaoTest.java:76) - =2. getFailure()=
+[2022-05-31 14:47:02.820] DEBUG JunitUserDaoTest.getFailure(JunitUserDaoTest.java:77) - =======================
+[2022-05-31 14:47:02.997] DEBUG UserDao$1.makeStatement(UserDao.java:116) - =============================
+[2022-05-31 14:47:02.997] DEBUG UserDao$1.makeStatement(UserDao.java:117) - sql: 
+ DELETE FROM hr_member 
+
+[2022-05-31 14:47:02.997] DEBUG UserDao$1.makeStatement(UserDao.java:118) - =============================
+[2022-05-31 14:47:03.272] DEBUG UserDao.get(UserDao.java:157) - =============================
+[2022-05-31 14:47:03.272] DEBUG UserDao.get(UserDao.java:158) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 14:47:03.272] DEBUG UserDao.get(UserDao.java:159) - sql: 
+  SELECT u_id,   
+        name,   
+        passwd  
+ FROM hr_member 
+ WHERE u_id = ? 
+
+[2022-05-31 14:47:03.273] DEBUG UserDao.get(UserDao.java:160) - =============================
+[2022-05-31 14:47:03.277] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:102) - =======================
+[2022-05-31 14:47:03.277] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:103) - =9. tearDown()=
+[2022-05-31 14:47:03.277] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:104) - =======================
+[2022-05-31 15:10:15.932] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-05-31 15:10:15.943] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@15de0b3c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@489115ef, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3857f613, org.springframework.test.context.support.DirtiesContextTestExecutionListener@198b6731, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7c6908d7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3c9754d8, org.springframework.test.context.event.EventPublishingTestExecutionListener@3bf7ca37]
+[2022-05-31 15:10:16.188] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:86) - =======================
+[2022-05-31 15:10:16.188] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:87) - =0. setUp()=
+[2022-05-31 15:10:16.188] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:88) - =======================
+[2022-05-31 15:10:16.191] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:93) - context:org.springframework.context.support.GenericApplicationContext@4c309d4d, started on Tue May 31 15:10:16 KST 2022
+[2022-05-31 15:10:16.191] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:94) - dao:com.pcwk.ehr.UserDao@64ec96c6
+[2022-05-31 15:10:16.192] DEBUG JunitUserDaoTest.addAndGet(JunitUserDaoTest.java:34) - =======================
+[2022-05-31 15:10:16.192] DEBUG JunitUserDaoTest.addAndGet(JunitUserDaoTest.java:35) - =1. setUp()=
+[2022-05-31 15:10:16.192] DEBUG JunitUserDaoTest.addAndGet(JunitUserDaoTest.java:36) - =======================
+[2022-05-31 15:10:18.234] DEBUG UserDao$1.makeStatement(UserDao.java:119) - =============================
+[2022-05-31 15:10:18.234] DEBUG UserDao$1.makeStatement(UserDao.java:120) - sql: 
+ DELETE FROM hr_member 
+
+[2022-05-31 15:10:18.234] DEBUG UserDao$1.makeStatement(UserDao.java:121) - =============================
+[2022-05-31 15:10:18.436] DEBUG UserDao.getCount(UserDao.java:43) - =============================
+[2022-05-31 15:10:18.436] DEBUG UserDao.getCount(UserDao.java:44) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 15:10:18.436] DEBUG UserDao.getCount(UserDao.java:45) - sql: 
+  SELECT COUNT(*) AS cnt    
+ FROM hr_member            
+ WHERE u_id LIKE ?  || '%' 
+
+[2022-05-31 15:10:18.436] DEBUG UserDao.getCount(UserDao.java:46) - =============================
+[2022-05-31 15:10:18.473] DEBUG UserDao.getCount(UserDao.java:59) - ====================
+[2022-05-31 15:10:18.473] DEBUG UserDao.getCount(UserDao.java:60) - =count=0
+[2022-05-31 15:10:18.473] DEBUG UserDao.getCount(UserDao.java:61) - ====================
+[2022-05-31 15:10:18.608] DEBUG UserDao$2.makeStatement(UserDao.java:224) - =============================
+[2022-05-31 15:10:18.609] DEBUG UserDao$2.makeStatement(UserDao.java:225) - param :UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 15:10:18.609] DEBUG UserDao$2.makeStatement(UserDao.java:226) - sql : 
+ INSERT INTO hr_member ( 
+     u_id,               
+     name,               
+     passwd              
+ ) VALUES (              
+     ?,                  
+     ?,                  
+     ?                   
+ )                       
+
+[2022-05-31 15:10:18.609] DEBUG UserDao$2.makeStatement(UserDao.java:227) - =============================
+[2022-05-31 15:10:18.749] DEBUG UserDao.getCount(UserDao.java:43) - =============================
+[2022-05-31 15:10:18.749] DEBUG UserDao.getCount(UserDao.java:44) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 15:10:18.749] DEBUG UserDao.getCount(UserDao.java:45) - sql: 
+  SELECT COUNT(*) AS cnt    
+ FROM hr_member            
+ WHERE u_id LIKE ?  || '%' 
+
+[2022-05-31 15:10:18.749] DEBUG UserDao.getCount(UserDao.java:46) - =============================
+[2022-05-31 15:10:19.073] DEBUG UserDao.getCount(UserDao.java:59) - ====================
+[2022-05-31 15:10:19.077] DEBUG UserDao.getCount(UserDao.java:60) - =count=1
+[2022-05-31 15:10:19.078] DEBUG UserDao.getCount(UserDao.java:61) - ====================
+[2022-05-31 15:10:19.242] DEBUG UserDao$2.makeStatement(UserDao.java:224) - =============================
+[2022-05-31 15:10:19.242] DEBUG UserDao$2.makeStatement(UserDao.java:225) - param :UserVO [uId=p070, name=김주혜070, passwd=4321]
+[2022-05-31 15:10:19.242] DEBUG UserDao$2.makeStatement(UserDao.java:226) - sql : 
+ INSERT INTO hr_member ( 
+     u_id,               
+     name,               
+     passwd              
+ ) VALUES (              
+     ?,                  
+     ?,                  
+     ?                   
+ )                       
+
+[2022-05-31 15:10:19.242] DEBUG UserDao$2.makeStatement(UserDao.java:227) - =============================
+[2022-05-31 15:10:19.912] DEBUG UserDao.getCount(UserDao.java:43) - =============================
+[2022-05-31 15:10:19.912] DEBUG UserDao.getCount(UserDao.java:44) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 15:10:19.912] DEBUG UserDao.getCount(UserDao.java:45) - sql: 
+  SELECT COUNT(*) AS cnt    
+ FROM hr_member            
+ WHERE u_id LIKE ?  || '%' 
+
+[2022-05-31 15:10:19.912] DEBUG UserDao.getCount(UserDao.java:46) - =============================
+[2022-05-31 15:10:19.921] DEBUG UserDao.getCount(UserDao.java:59) - ====================
+[2022-05-31 15:10:19.921] DEBUG UserDao.getCount(UserDao.java:60) - =count=2
+[2022-05-31 15:10:19.921] DEBUG UserDao.getCount(UserDao.java:61) - ====================
+[2022-05-31 15:10:20.558] DEBUG UserDao.get(UserDao.java:158) - =============================
+[2022-05-31 15:10:20.558] DEBUG UserDao.get(UserDao.java:159) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 15:10:20.558] DEBUG UserDao.get(UserDao.java:160) - sql: 
+  SELECT u_id,   
+        name,   
+        passwd  
+ FROM hr_member 
+ WHERE u_id = ? 
+
+[2022-05-31 15:10:20.558] DEBUG UserDao.get(UserDao.java:161) - =============================
+[2022-05-31 15:10:20.583] DEBUG UserDao.get(UserDao.java:182) - =============================
+[2022-05-31 15:10:20.584] DEBUG UserDao.get(UserDao.java:183) - =outVO=UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 15:10:20.584] DEBUG UserDao.get(UserDao.java:184) - =============================
+[2022-05-31 15:10:20.694] DEBUG UserDao.get(UserDao.java:158) - =============================
+[2022-05-31 15:10:20.694] DEBUG UserDao.get(UserDao.java:159) - param : UserVO [uId=p070, name=김주혜070, passwd=4321]
+[2022-05-31 15:10:20.694] DEBUG UserDao.get(UserDao.java:160) - sql: 
+  SELECT u_id,   
+        name,   
+        passwd  
+ FROM hr_member 
+ WHERE u_id = ? 
+
+[2022-05-31 15:10:20.694] DEBUG UserDao.get(UserDao.java:161) - =============================
+[2022-05-31 15:10:20.700] DEBUG UserDao.get(UserDao.java:182) - =============================
+[2022-05-31 15:10:20.701] DEBUG UserDao.get(UserDao.java:183) - =outVO=UserVO [uId=p070, name=김주혜070, passwd=4321]
+[2022-05-31 15:10:20.701] DEBUG UserDao.get(UserDao.java:184) - =============================
+[2022-05-31 15:10:20.733] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:102) - =======================
+[2022-05-31 15:10:20.734] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:103) - =9. tearDown()=
+[2022-05-31 15:10:20.734] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:104) - =======================
+[2022-05-31 15:10:20.736] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:86) - =======================
+[2022-05-31 15:10:20.736] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:87) - =0. setUp()=
+[2022-05-31 15:10:20.736] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:88) - =======================
+[2022-05-31 15:10:20.736] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:93) - context:org.springframework.context.support.GenericApplicationContext@4c309d4d, started on Tue May 31 15:10:16 KST 2022
+[2022-05-31 15:10:20.736] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:94) - dao:com.pcwk.ehr.UserDao@64ec96c6
+[2022-05-31 15:10:20.737] DEBUG JunitUserDaoTest.getFailure(JunitUserDaoTest.java:75) - =======================
+[2022-05-31 15:10:20.737] DEBUG JunitUserDaoTest.getFailure(JunitUserDaoTest.java:76) - =2. getFailure()=
+[2022-05-31 15:10:20.737] DEBUG JunitUserDaoTest.getFailure(JunitUserDaoTest.java:77) - =======================
+[2022-05-31 15:10:20.850] DEBUG UserDao$1.makeStatement(UserDao.java:119) - =============================
+[2022-05-31 15:10:20.850] DEBUG UserDao$1.makeStatement(UserDao.java:120) - sql: 
+ DELETE FROM hr_member 
+
+[2022-05-31 15:10:20.850] DEBUG UserDao$1.makeStatement(UserDao.java:121) - =============================
+[2022-05-31 15:10:21.301] DEBUG UserDao.get(UserDao.java:158) - =============================
+[2022-05-31 15:10:21.302] DEBUG UserDao.get(UserDao.java:159) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 15:10:21.302] DEBUG UserDao.get(UserDao.java:160) - sql: 
+  SELECT u_id,   
+        name,   
+        passwd  
+ FROM hr_member 
+ WHERE u_id = ? 
+
+[2022-05-31 15:10:21.302] DEBUG UserDao.get(UserDao.java:161) - =============================
+[2022-05-31 15:10:21.310] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:102) - =======================
+[2022-05-31 15:10:21.310] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:103) - =9. tearDown()=
+[2022-05-31 15:10:21.311] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:104) - =======================
+[2022-05-31 15:13:01.703] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-05-31 15:13:01.712] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@15de0b3c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@489115ef, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3857f613, org.springframework.test.context.support.DirtiesContextTestExecutionListener@198b6731, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7c6908d7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3c9754d8, org.springframework.test.context.event.EventPublishingTestExecutionListener@3bf7ca37]
+[2022-05-31 15:13:01.956] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:86) - =======================
+[2022-05-31 15:13:01.956] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:87) - =0. setUp()=
+[2022-05-31 15:13:01.956] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:88) - =======================
+[2022-05-31 15:13:01.959] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:93) - context:org.springframework.context.support.GenericApplicationContext@4c309d4d, started on Tue May 31 15:13:01 KST 2022
+[2022-05-31 15:13:01.959] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:94) - dao:com.pcwk.ehr.UserDao@64ec96c6
+[2022-05-31 15:13:01.960] DEBUG JunitUserDaoTest.addAndGet(JunitUserDaoTest.java:34) - =======================
+[2022-05-31 15:13:01.960] DEBUG JunitUserDaoTest.addAndGet(JunitUserDaoTest.java:35) - =1. setUp()=
+[2022-05-31 15:13:01.960] DEBUG JunitUserDaoTest.addAndGet(JunitUserDaoTest.java:36) - =======================
+[2022-05-31 15:13:02.946] DEBUG UserDao$1.makeStatement(UserDao.java:119) - =============================
+[2022-05-31 15:13:02.946] DEBUG UserDao$1.makeStatement(UserDao.java:120) - sql: 
+ DELETE FROM hr_member 
+
+[2022-05-31 15:13:02.946] DEBUG UserDao$1.makeStatement(UserDao.java:121) - =============================
+[2022-05-31 15:13:03.149] DEBUG UserDao.getCount(UserDao.java:43) - =============================
+[2022-05-31 15:13:03.149] DEBUG UserDao.getCount(UserDao.java:44) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 15:13:03.149] DEBUG UserDao.getCount(UserDao.java:45) - sql: 
+  SELECT COUNT(*) AS cnt    
+ FROM hr_member            
+ WHERE u_id LIKE ?  || '%' 
+
+[2022-05-31 15:13:03.149] DEBUG UserDao.getCount(UserDao.java:46) - =============================
+[2022-05-31 15:13:03.193] DEBUG UserDao.getCount(UserDao.java:59) - ====================
+[2022-05-31 15:13:03.194] DEBUG UserDao.getCount(UserDao.java:60) - =count=0
+[2022-05-31 15:13:03.194] DEBUG UserDao.getCount(UserDao.java:61) - ====================
+[2022-05-31 15:13:03.297] DEBUG UserDao$2.makeStatement(UserDao.java:224) - =============================
+[2022-05-31 15:13:03.297] DEBUG UserDao$2.makeStatement(UserDao.java:225) - param :UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 15:13:03.298] DEBUG UserDao$2.makeStatement(UserDao.java:226) - sql : 
+ INSERT INTO hr_member ( 
+     u_id,               
+     name,               
+     passwd              
+ ) VALUES (              
+     ?,                  
+     ?,                  
+     ?                   
+ )                       
+
+[2022-05-31 15:13:03.298] DEBUG UserDao$2.makeStatement(UserDao.java:227) - =============================
+[2022-05-31 15:13:03.431] DEBUG UserDao.getCount(UserDao.java:43) - =============================
+[2022-05-31 15:13:03.431] DEBUG UserDao.getCount(UserDao.java:44) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 15:13:03.431] DEBUG UserDao.getCount(UserDao.java:45) - sql: 
+  SELECT COUNT(*) AS cnt    
+ FROM hr_member            
+ WHERE u_id LIKE ?  || '%' 
+
+[2022-05-31 15:13:03.431] DEBUG UserDao.getCount(UserDao.java:46) - =============================
+[2022-05-31 15:13:03.449] DEBUG UserDao.getCount(UserDao.java:59) - ====================
+[2022-05-31 15:13:03.452] DEBUG UserDao.getCount(UserDao.java:60) - =count=1
+[2022-05-31 15:13:03.452] DEBUG UserDao.getCount(UserDao.java:61) - ====================
+[2022-05-31 15:13:03.566] DEBUG UserDao$2.makeStatement(UserDao.java:224) - =============================
+[2022-05-31 15:13:03.566] DEBUG UserDao$2.makeStatement(UserDao.java:225) - param :UserVO [uId=p070, name=김주혜070, passwd=4321]
+[2022-05-31 15:13:03.566] DEBUG UserDao$2.makeStatement(UserDao.java:226) - sql : 
+ INSERT INTO hr_member ( 
+     u_id,               
+     name,               
+     passwd              
+ ) VALUES (              
+     ?,                  
+     ?,                  
+     ?                   
+ )                       
+
+[2022-05-31 15:13:03.566] DEBUG UserDao$2.makeStatement(UserDao.java:227) - =============================
+[2022-05-31 15:13:03.694] DEBUG UserDao.getCount(UserDao.java:43) - =============================
+[2022-05-31 15:13:03.694] DEBUG UserDao.getCount(UserDao.java:44) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 15:13:03.694] DEBUG UserDao.getCount(UserDao.java:45) - sql: 
+  SELECT COUNT(*) AS cnt    
+ FROM hr_member            
+ WHERE u_id LIKE ?  || '%' 
+
+[2022-05-31 15:13:03.694] DEBUG UserDao.getCount(UserDao.java:46) - =============================
+[2022-05-31 15:13:03.699] DEBUG UserDao.getCount(UserDao.java:59) - ====================
+[2022-05-31 15:13:03.699] DEBUG UserDao.getCount(UserDao.java:60) - =count=2
+[2022-05-31 15:13:03.699] DEBUG UserDao.getCount(UserDao.java:61) - ====================
+[2022-05-31 15:13:03.825] DEBUG UserDao.get(UserDao.java:158) - =============================
+[2022-05-31 15:13:03.825] DEBUG UserDao.get(UserDao.java:159) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 15:13:03.825] DEBUG UserDao.get(UserDao.java:160) - sql: 
+  SELECT u_id,   
+        name,   
+        passwd  
+ FROM hr_member 
+ WHERE u_id = ? 
+
+[2022-05-31 15:13:03.825] DEBUG UserDao.get(UserDao.java:161) - =============================
+[2022-05-31 15:13:03.866] DEBUG UserDao.get(UserDao.java:182) - =============================
+[2022-05-31 15:13:03.866] DEBUG UserDao.get(UserDao.java:183) - =outVO=UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 15:13:03.866] DEBUG UserDao.get(UserDao.java:184) - =============================
+[2022-05-31 15:13:04.016] DEBUG UserDao.get(UserDao.java:158) - =============================
+[2022-05-31 15:13:04.017] DEBUG UserDao.get(UserDao.java:159) - param : UserVO [uId=p070, name=김주혜070, passwd=4321]
+[2022-05-31 15:13:04.017] DEBUG UserDao.get(UserDao.java:160) - sql: 
+  SELECT u_id,   
+        name,   
+        passwd  
+ FROM hr_member 
+ WHERE u_id = ? 
+
+[2022-05-31 15:13:04.017] DEBUG UserDao.get(UserDao.java:161) - =============================
+[2022-05-31 15:13:04.024] DEBUG UserDao.get(UserDao.java:182) - =============================
+[2022-05-31 15:13:04.024] DEBUG UserDao.get(UserDao.java:183) - =outVO=UserVO [uId=p070, name=김주혜070, passwd=4321]
+[2022-05-31 15:13:04.025] DEBUG UserDao.get(UserDao.java:184) - =============================
+[2022-05-31 15:13:04.037] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:102) - =======================
+[2022-05-31 15:13:04.038] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:103) - =9. tearDown()=
+[2022-05-31 15:13:04.038] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:104) - =======================
+[2022-05-31 15:13:04.040] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:86) - =======================
+[2022-05-31 15:13:04.040] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:87) - =0. setUp()=
+[2022-05-31 15:13:04.040] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:88) - =======================
+[2022-05-31 15:13:04.040] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:93) - context:org.springframework.context.support.GenericApplicationContext@4c309d4d, started on Tue May 31 15:13:01 KST 2022
+[2022-05-31 15:13:04.040] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:94) - dao:com.pcwk.ehr.UserDao@64ec96c6
+[2022-05-31 15:13:04.040] DEBUG JunitUserDaoTest.getFailure(JunitUserDaoTest.java:75) - =======================
+[2022-05-31 15:13:04.041] DEBUG JunitUserDaoTest.getFailure(JunitUserDaoTest.java:76) - =2. getFailure()=
+[2022-05-31 15:13:04.041] DEBUG JunitUserDaoTest.getFailure(JunitUserDaoTest.java:77) - =======================
+[2022-05-31 15:13:04.199] DEBUG UserDao$1.makeStatement(UserDao.java:119) - =============================
+[2022-05-31 15:13:04.199] DEBUG UserDao$1.makeStatement(UserDao.java:120) - sql: 
+ DELETE FROM hr_member 
+
+[2022-05-31 15:13:04.200] DEBUG UserDao$1.makeStatement(UserDao.java:121) - =============================
+[2022-05-31 15:13:04.394] DEBUG UserDao.get(UserDao.java:158) - =============================
+[2022-05-31 15:13:04.394] DEBUG UserDao.get(UserDao.java:159) - param : UserVO [uId=p07, name=김주혜07, passwd=4321]
+[2022-05-31 15:13:04.395] DEBUG UserDao.get(UserDao.java:160) - sql: 
+  SELECT u_id,   
+        name,   
+        passwd  
+ FROM hr_member 
+ WHERE u_id = ? 
+
+[2022-05-31 15:13:04.395] DEBUG UserDao.get(UserDao.java:161) - =============================
+[2022-05-31 15:13:04.398] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:102) - =======================
+[2022-05-31 15:13:04.399] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:103) - =9. tearDown()=
+[2022-05-31 15:13:04.399] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:104) - =======================
