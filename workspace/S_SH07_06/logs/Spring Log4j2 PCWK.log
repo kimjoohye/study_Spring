@@ -1,0 +1,104 @@
+[2022-06-02 14:20:06.415] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-02 14:20:06.427] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1a677343, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@15de0b3c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@489115ef, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3857f613, org.springframework.test.context.transaction.TransactionalTestExecutionListener@198b6731, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7c6908d7, org.springframework.test.context.event.EventPublishingTestExecutionListener@3c9754d8]
+[2022-06-02 14:20:06.617] DEBUG SonySpeaker.<init>(SonySpeaker.java:12) - SonySpeaker  생성자 호출
+[2022-06-02 14:20:06.621] DEBUG SamsungTV.<init>(SamsungTV.java:13) - 삼성 TV default 생성자 SamsungTV()
+[2022-06-02 14:20:06.649] DEBUG SamsungTV.setSpeaker(SamsungTV.java:35) - 삼성 TVsetSpeaker 호출!
+[2022-06-02 14:20:06.649] DEBUG SamsungTV.setPrice(SamsungTV.java:40) - 삼성 TVsetPrice 호출!
+[2022-06-02 14:20:06.650] DEBUG SamsungTV.initMethod(SamsungTV.java:45) - 삼성 TV initMethod()
+[2022-06-02 14:20:06.686] DEBUG JTvPcwk.setUp(JTvPcwk.java:29) - -------------------------
+[2022-06-02 14:20:06.686] DEBUG JTvPcwk.setUp(JTvPcwk.java:30) - -0. setUp()-
+[2022-06-02 14:20:06.686] DEBUG JTvPcwk.setUp(JTvPcwk.java:31) - -------------------------
+[2022-06-02 14:20:06.690] DEBUG JTvPcwk.setUp(JTvPcwk.java:36) - -context-org.springframework.context.support.GenericApplicationContext@ed7f8b4, started on Thu Jun 02 14:20:06 KST 2022
+[2022-06-02 14:20:06.690] DEBUG JTvPcwk.setUp(JTvPcwk.java:37) - -tv01-com.pcwk.ehr.SamsungTV@4470fbd6
+[2022-06-02 14:20:06.690] DEBUG JTvPcwk.setUp(JTvPcwk.java:38) - -tv02-com.pcwk.ehr.SamsungTV@4470fbd6
+[2022-06-02 14:20:06.691] DEBUG JTvPcwk.tvTest(JTvPcwk.java:53) - ==========================
+[2022-06-02 14:20:06.692] DEBUG JTvPcwk.tvTest(JTvPcwk.java:54) - =tvTest()=
+[2022-06-02 14:20:06.692] DEBUG JTvPcwk.tvTest(JTvPcwk.java:55) - ==========================
+[2022-06-02 14:20:06.692] DEBUG SamsungTV.powerOn(SamsungTV.java:56) - 삼성 TV 전원을 켠다.
+[2022-06-02 14:20:06.692] DEBUG AppleSpeaker.volumeUp(AppleSpeaker.java:15) - Apple SpeakervolumeUp() 호출
+[2022-06-02 14:20:06.692] DEBUG AppleSpeaker.volumeDown(AppleSpeaker.java:21) - Apple SpeakervolumeDown() 호출
+[2022-06-02 14:20:06.693] DEBUG SamsungTV.powerOff(SamsungTV.java:61) - 삼성 TV 전원을 끈다.
+[2022-06-02 14:20:06.695] DEBUG JTvPcwk.tearDown(JTvPcwk.java:46) - -------------------------
+[2022-06-02 14:20:06.695] DEBUG JTvPcwk.tearDown(JTvPcwk.java:47) - -9. tearDown()-
+[2022-06-02 14:20:06.695] DEBUG JTvPcwk.tearDown(JTvPcwk.java:48) - -------------------------
+[2022-06-02 14:20:06.701] DEBUG SamsungTV.destroyMethod(SamsungTV.java:51) - 삼성 TV destroyMethod()
+[2022-06-02 14:21:27.421] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-02 14:21:27.431] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1a677343, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@15de0b3c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@489115ef, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3857f613, org.springframework.test.context.transaction.TransactionalTestExecutionListener@198b6731, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7c6908d7, org.springframework.test.context.event.EventPublishingTestExecutionListener@3c9754d8]
+[2022-06-02 14:21:27.583] DEBUG SonySpeaker.<init>(SonySpeaker.java:12) - SonySpeaker  생성자 호출
+[2022-06-02 14:21:27.585] DEBUG SamsungTV.<init>(SamsungTV.java:13) - 삼성 TV default 생성자 SamsungTV()
+[2022-06-02 14:21:27.604] DEBUG SamsungTV.setSpeaker(SamsungTV.java:35) - 삼성 TVsetSpeaker 호출!
+[2022-06-02 14:21:27.605] DEBUG SamsungTV.setPrice(SamsungTV.java:40) - 삼성 TVsetPrice 호출! (price=10000000)
+[2022-06-02 14:21:27.605] DEBUG SamsungTV.initMethod(SamsungTV.java:45) - 삼성 TV initMethod()
+[2022-06-02 14:21:27.634] DEBUG JTvPcwk.setUp(JTvPcwk.java:29) - -------------------------
+[2022-06-02 14:21:27.634] DEBUG JTvPcwk.setUp(JTvPcwk.java:30) - -0. setUp()-
+[2022-06-02 14:21:27.634] DEBUG JTvPcwk.setUp(JTvPcwk.java:31) - -------------------------
+[2022-06-02 14:21:27.637] DEBUG JTvPcwk.setUp(JTvPcwk.java:36) - -context-org.springframework.context.support.GenericApplicationContext@ed7f8b4, started on Thu Jun 02 14:21:27 KST 2022
+[2022-06-02 14:21:27.637] DEBUG JTvPcwk.setUp(JTvPcwk.java:37) - -tv01-com.pcwk.ehr.SamsungTV@4470fbd6
+[2022-06-02 14:21:27.638] DEBUG JTvPcwk.setUp(JTvPcwk.java:38) - -tv02-com.pcwk.ehr.SamsungTV@4470fbd6
+[2022-06-02 14:21:27.638] DEBUG JTvPcwk.tvTest(JTvPcwk.java:53) - ==========================
+[2022-06-02 14:21:27.638] DEBUG JTvPcwk.tvTest(JTvPcwk.java:54) - =tvTest()=
+[2022-06-02 14:21:27.638] DEBUG JTvPcwk.tvTest(JTvPcwk.java:55) - ==========================
+[2022-06-02 14:21:27.639] DEBUG SamsungTV.powerOn(SamsungTV.java:56) - 삼성 TV 전원을 켠다.
+[2022-06-02 14:21:27.639] DEBUG AppleSpeaker.volumeUp(AppleSpeaker.java:15) - Apple SpeakervolumeUp() 호출
+[2022-06-02 14:21:27.639] DEBUG AppleSpeaker.volumeDown(AppleSpeaker.java:21) - Apple SpeakervolumeDown() 호출
+[2022-06-02 14:21:27.639] DEBUG SamsungTV.powerOff(SamsungTV.java:61) - 삼성 TV 전원을 끈다.
+[2022-06-02 14:21:27.640] DEBUG JTvPcwk.tearDown(JTvPcwk.java:46) - -------------------------
+[2022-06-02 14:21:27.640] DEBUG JTvPcwk.tearDown(JTvPcwk.java:47) - -9. tearDown()-
+[2022-06-02 14:21:27.641] DEBUG JTvPcwk.tearDown(JTvPcwk.java:48) - -------------------------
+[2022-06-02 14:21:27.645] DEBUG SamsungTV.destroyMethod(SamsungTV.java:51) - 삼성 TV destroyMethod()
+[2022-06-02 14:27:40.284] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-02 14:27:40.294] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1a677343, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@15de0b3c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@489115ef, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3857f613, org.springframework.test.context.transaction.TransactionalTestExecutionListener@198b6731, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7c6908d7, org.springframework.test.context.event.EventPublishingTestExecutionListener@3c9754d8]
+[2022-06-02 14:27:40.458] DEBUG SonySpeaker.<init>(SonySpeaker.java:12) - SonySpeaker  생성자 호출
+[2022-06-02 14:27:40.462] DEBUG SamsungTV.<init>(SamsungTV.java:13) - 삼성 TV default 생성자 SamsungTV()
+[2022-06-02 14:27:40.482] DEBUG SamsungTV.setPrice(SamsungTV.java:40) - 삼성 TVsetPrice 호출! (price=10000000)
+[2022-06-02 14:27:40.483] DEBUG SamsungTV.setSpeaker(SamsungTV.java:35) - 삼성 TVsetSpeaker 호출!
+[2022-06-02 14:27:40.483] DEBUG SamsungTV.initMethod(SamsungTV.java:45) - 삼성 TV initMethod()
+[2022-06-02 14:27:40.513] DEBUG JTvPcwk.setUp(JTvPcwk.java:29) - -------------------------
+[2022-06-02 14:27:40.513] DEBUG JTvPcwk.setUp(JTvPcwk.java:30) - -0. setUp()-
+[2022-06-02 14:27:40.513] DEBUG JTvPcwk.setUp(JTvPcwk.java:31) - -------------------------
+[2022-06-02 14:27:40.515] DEBUG JTvPcwk.setUp(JTvPcwk.java:36) - -context-org.springframework.context.support.GenericApplicationContext@ed7f8b4, started on Thu Jun 02 14:27:40 KST 2022
+[2022-06-02 14:27:40.515] DEBUG JTvPcwk.setUp(JTvPcwk.java:37) - -tv01-com.pcwk.ehr.SamsungTV@60db1c0e
+[2022-06-02 14:27:40.515] DEBUG JTvPcwk.setUp(JTvPcwk.java:38) - -tv02-com.pcwk.ehr.SamsungTV@60db1c0e
+[2022-06-02 14:27:40.516] DEBUG JTvPcwk.tvTest(JTvPcwk.java:53) - ==========================
+[2022-06-02 14:27:40.516] DEBUG JTvPcwk.tvTest(JTvPcwk.java:54) - =tvTest()=
+[2022-06-02 14:27:40.516] DEBUG JTvPcwk.tvTest(JTvPcwk.java:55) - ==========================
+[2022-06-02 14:27:40.516] DEBUG SamsungTV.powerOn(SamsungTV.java:56) - 삼성 TV 전원을 켠다.
+[2022-06-02 14:27:40.516] DEBUG SonySpeaker.volumeUp(SonySpeaker.java:17) - SonySpeaker  volumeUp 호출
+[2022-06-02 14:27:40.517] DEBUG SonySpeaker.volumeDown(SonySpeaker.java:22) - SonySpeaker  volumeDown 호출
+[2022-06-02 14:27:40.517] DEBUG SamsungTV.powerOff(SamsungTV.java:61) - 삼성 TV 전원을 끈다.
+[2022-06-02 14:27:40.519] DEBUG JTvPcwk.tearDown(JTvPcwk.java:46) - -------------------------
+[2022-06-02 14:27:40.519] DEBUG JTvPcwk.tearDown(JTvPcwk.java:47) - -9. tearDown()-
+[2022-06-02 14:27:40.519] DEBUG JTvPcwk.tearDown(JTvPcwk.java:48) - -------------------------
+[2022-06-02 14:27:40.522] DEBUG SamsungTV.destroyMethod(SamsungTV.java:51) - 삼성 TV destroyMethod()
+[2022-06-02 14:45:58.218] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-02 14:45:58.227] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6ed3ccb2, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1a677343, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@15de0b3c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@489115ef, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3857f613, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@198b6731, org.springframework.test.context.event.EventPublishingTestExecutionListener@7c6908d7]
+[2022-06-02 14:45:58.448] DEBUG JCollectionListBeanTest.setUp(JCollectionListBeanTest.java:26) - -------------------------
+[2022-06-02 14:45:58.448] DEBUG JCollectionListBeanTest.setUp(JCollectionListBeanTest.java:27) - -0. setUp()-
+[2022-06-02 14:45:58.448] DEBUG JCollectionListBeanTest.setUp(JCollectionListBeanTest.java:28) - -------------------------
+[2022-06-02 14:45:58.452] DEBUG JCollectionListBeanTest.setUp(JCollectionListBeanTest.java:30) - -context-org.springframework.context.support.GenericApplicationContext@37271612, started on Thu Jun 02 14:45:58 KST 2022
+[2022-06-02 14:45:58.452] DEBUG JCollectionListBeanTest.tvTest(JCollectionListBeanTest.java:44) - ==========================
+[2022-06-02 14:45:58.453] DEBUG JCollectionListBeanTest.tvTest(JCollectionListBeanTest.java:45) - =tvTest()=
+[2022-06-02 14:45:58.453] DEBUG JCollectionListBeanTest.tvTest(JCollectionListBeanTest.java:46) - ==========================
+[2022-06-02 14:45:58.454] DEBUG JCollectionListBeanTest.tearDown(JCollectionListBeanTest.java:37) - -------------------------
+[2022-06-02 14:45:58.454] DEBUG JCollectionListBeanTest.tearDown(JCollectionListBeanTest.java:38) - -9. tearDown()-
+[2022-06-02 14:45:58.454] DEBUG JCollectionListBeanTest.tearDown(JCollectionListBeanTest.java:39) - -------------------------
+[2022-06-02 14:49:45.821] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-02 14:49:45.830] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1a677343, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@15de0b3c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@489115ef, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3857f613, org.springframework.test.context.transaction.TransactionalTestExecutionListener@198b6731, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7c6908d7, org.springframework.test.context.event.EventPublishingTestExecutionListener@3c9754d8]
+[2022-06-02 14:49:46.028] DEBUG JCollectionListBeanTest.tearDown(JCollectionListBeanTest.java:46) - -------------------------
+[2022-06-02 14:49:46.028] DEBUG JCollectionListBeanTest.tearDown(JCollectionListBeanTest.java:47) - -9. tearDown()-
+[2022-06-02 14:49:46.028] DEBUG JCollectionListBeanTest.tearDown(JCollectionListBeanTest.java:48) - -------------------------
+[2022-06-02 14:49:55.317] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-02 14:49:55.326] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1a677343, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@15de0b3c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@489115ef, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3857f613, org.springframework.test.context.transaction.TransactionalTestExecutionListener@198b6731, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7c6908d7, org.springframework.test.context.event.EventPublishingTestExecutionListener@3c9754d8]
+[2022-06-02 14:49:55.527] DEBUG JCollectionListBeanTest.setUp(JCollectionListBeanTest.java:32) - -------------------------
+[2022-06-02 14:49:55.528] DEBUG JCollectionListBeanTest.setUp(JCollectionListBeanTest.java:33) - -0. setUp()-
+[2022-06-02 14:49:55.528] DEBUG JCollectionListBeanTest.setUp(JCollectionListBeanTest.java:34) - -------------------------
+[2022-06-02 14:49:55.530] DEBUG JCollectionListBeanTest.setUp(JCollectionListBeanTest.java:37) - -context-org.springframework.context.support.GenericApplicationContext@ed7f8b4, started on Thu Jun 02 14:49:55 KST 2022
+[2022-06-02 14:49:55.530] DEBUG JCollectionListBeanTest.setUp(JCollectionListBeanTest.java:38) - -collectionListBean-com.pcwk.ehr.collection.CollectionListBean@45385f75
+[2022-06-02 14:49:55.530] DEBUG JCollectionListBeanTest.tvTest(JCollectionListBeanTest.java:53) - ==========================
+[2022-06-02 14:49:55.531] DEBUG JCollectionListBeanTest.tvTest(JCollectionListBeanTest.java:54) - =test()=
+[2022-06-02 14:49:55.531] DEBUG JCollectionListBeanTest.tvTest(JCollectionListBeanTest.java:55) - ==========================
+[2022-06-02 14:49:55.531] DEBUG JCollectionListBeanTest.tvTest(JCollectionListBeanTest.java:59) - str: 서울시 강남구 역삼동
+[2022-06-02 14:49:55.531] DEBUG JCollectionListBeanTest.tvTest(JCollectionListBeanTest.java:59) - str: 서울시 서대문구 신촌
+[2022-06-02 14:49:55.532] DEBUG JCollectionListBeanTest.tearDown(JCollectionListBeanTest.java:46) - -------------------------
+[2022-06-02 14:49:55.532] DEBUG JCollectionListBeanTest.tearDown(JCollectionListBeanTest.java:47) - -9. tearDown()-
+[2022-06-02 14:49:55.532] DEBUG JCollectionListBeanTest.tearDown(JCollectionListBeanTest.java:48) - -------------------------
