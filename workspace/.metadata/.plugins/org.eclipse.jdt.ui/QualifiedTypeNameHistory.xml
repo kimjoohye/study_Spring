@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.springframework.test.context.ContextConfiguration"/>
-<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
-<fullyQualifiedTypeName name="com.pcwk.ehr.SamsungTV"/>
-<fullyQualifiedTypeName name="com.pcwk.ehr.SonySpeaker"/>
-<fullyQualifiedTypeName name="com.pcwk.ehr.collection.CollectionListBean"/>
-<fullyQualifiedTypeName name="com.pcwk.ehr.collection.CollectionSetBean"/>
-<fullyQualifiedTypeName name="com.pcwk.ehr.collection.CollectionProp"/>
-<fullyQualifiedTypeName name="java.util.Properties"/>
-<fullyQualifiedTypeName name="java.util.Set"/>
-<fullyQualifiedTypeName name="com.pcwk.ehr.Tv"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
-<fullyQualifiedTypeName name="org.springframework.jdbc.core.JdbcTemplate"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.core.RowMapper"/>
 <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
 <fullyQualifiedTypeName name="com.pcwk.ehr.UserVO"/>
@@ -28,7 +15,6 @@
 <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
 <fullyQualifiedTypeName name="com.pcwk.ehr.UserServiceImpl"/>
 <fullyQualifiedTypeName name="com.pcwk.ehr.TestUserServiceException"/>
-<fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="com.pcwk.ehr.TestUserService"/>
 <fullyQualifiedTypeName name="javax.sql.DataSource"/>
 <fullyQualifiedTypeName name="org.springframework.transaction.support.TransactionSynchronizationManager"/>
@@ -40,7 +26,6 @@
 <fullyQualifiedTypeName name="org.springframework.transaction.TransactionStatus"/>
 <fullyQualifiedTypeName name="org.springframework.transaction.support.DefaultTransactionDefinition"/>
 <fullyQualifiedTypeName name="org.springframework.transaction.PlatformTransactionManager"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="javax.mail.internet.MimeMessage"/>
 <fullyQualifiedTypeName name="org.springframework.mail.javamail.MimeMessageHelper"/>
 <fullyQualifiedTypeName name="javax.mail.MessagingException"/>
@@ -55,9 +40,24 @@
 <fullyQualifiedTypeName name="java.lang.reflect.Proxy"/>
 <fullyQualifiedTypeName name="com.pcwk.ehr.proxy.UppercaseHandler"/>
 <fullyQualifiedTypeName name="org.junit.Ignore"/>
-<fullyQualifiedTypeName name="org.apache.logging.log4j.LogManager"/>
-<fullyQualifiedTypeName name="org.apache.logging.log4j.Logger"/>
 <fullyQualifiedTypeName name="org.aopalliance.intercept.Joinpoint"/>
 <fullyQualifiedTypeName name="org.aspectj.lang.Signature"/>
 <fullyQualifiedTypeName name="org.aspectj.lang.JoinPoint"/>
+<fullyQualifiedTypeName name="org.apache.logging.log4j.Logger"/>
+<fullyQualifiedTypeName name="org.apache.logging.log4j.LogManager"/>
+<fullyQualifiedTypeName name="org.aspectj.lang.ProceedingJoinPoint"/>
+<fullyQualifiedTypeName name="org.springframework.util.StopWatch"/>
+<fullyQualifiedTypeName name="com.pcwk.ehr.aspectj.Member"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+<fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="com.pcwk.ehr.anno.dao.AnnoDao"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="com.pcwk.ehr.anno.service.AnnoService"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+<fullyQualifiedTypeName name="com.pcwk.ehr.anno.domain.AnnoVO"/>
 </qualifiedTypeNameHistroy>
