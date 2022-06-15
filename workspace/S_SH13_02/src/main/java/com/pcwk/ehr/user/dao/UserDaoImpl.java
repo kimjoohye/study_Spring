@@ -14,6 +14,7 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 
+import com.pcwk.ehr.cmn.DTO;
 import com.pcwk.ehr.user.domain.Level;
 import com.pcwk.ehr.user.domain.UserVO;
 
@@ -284,7 +285,7 @@ public class UserDaoImpl implements UserDao {
 	}
 
 	@Override
-	public List<UserVO> doRetrieve() throws SQLException {
+	public List<UserVO> doRetrieve(DTO dto) throws SQLException {
 		// TODO Auto-generated method stub
 		return null;
 	}

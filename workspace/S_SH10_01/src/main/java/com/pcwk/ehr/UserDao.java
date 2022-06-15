@@ -6,13 +6,15 @@ import java.util.List;
 import javax.sql.DataSource;
 
 public interface UserDao {
-
+	
 	/**
 	 * 목록 조회
+	 * @param dto
 	 * @return List<UserVO>
 	 * @throws SQLException
 	 */
-	List<UserVO> doRetrieve() throws SQLException;
+	List<UserVO> doRetrieve(DTO dto) throws SQLException;
+	
 	/**
 	 * 사용자 삭제
 	 * @param inVO
