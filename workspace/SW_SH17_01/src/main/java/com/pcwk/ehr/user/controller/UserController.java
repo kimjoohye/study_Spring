@@ -59,13 +59,7 @@ public class UserController {
 		
 	}
 
-	
-	
-	
-	
-	
-	
-	//GET방식으로 : http://localhost:8081/ehr/user/doDelete.do?uId=p22
+	//GET방식으로 : http://localhost:8081/ehr/user/doDelete.do?uId=p07
 	@RequestMapping(value="/doDelete.do", method = RequestMethod.GET
 							,produces = "application/json;charset=UTF-8")
 	@ResponseBody
@@ -103,7 +97,7 @@ public class UserController {
 	}
 	
 	
-	//GET방식으로 : http://localhost:8081/ehr/user/doSelectOne.do?uId=p22
+	//GET방식으로 : http://localhost:8081/ehr/user/doSelectOne.do?uId=p07
 	@RequestMapping(value = "/doSelectOne.do",method = RequestMethod.GET
 			,produces = "application/json;charset=UTF-8")
 	@ResponseBody //스프링에서 비동기 처리를 하는 경우, Http 요청의 본문 body부분이 전달된다.

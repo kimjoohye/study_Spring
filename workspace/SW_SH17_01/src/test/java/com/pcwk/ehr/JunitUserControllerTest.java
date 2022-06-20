@@ -70,9 +70,6 @@ public class JunitUserControllerTest {
 		user02 = new UserVO("p070","김주혜070", "4321", Level.SILVER, 50, 2, "joohea5943@naver.com", "날짜_사용안함");
 		user03 = new UserVO("p0700","김주혜0700", "4321", Level.GOLD, 100, 31, "joohea5943@naver.com", "날짜_사용안함");
 		
-		
-		
-		
 		mockMvc = MockMvcBuilders.webAppContextSetup(webApplicationContext).build();
 		LOG.debug("webApplicationContext:"+webApplicationContext);
 		LOG.debug("mockMvc:"+mockMvc);
@@ -119,7 +116,7 @@ public class JunitUserControllerTest {
 	@Ignore
 	public void doDelete()throws Exception{
 		//호출url, param, 호출방식(get/post)
-		//GET방식으로 : http://localhost:8081/ehr/user/doDelete.do?uId=p22
+		//GET방식으로 : http://localhost:8081/ehr/user/doDelete.do?uId=p07
 		MockHttpServletRequestBuilder requestBuilder = MockMvcRequestBuilders.get("/user/doDelete.do")
 														.param("uId", user01.getuId());
 		
@@ -147,7 +144,7 @@ public class JunitUserControllerTest {
 	@Ignore
 	public void doSelectOne() throws Exception {
 		//호출url, param, 호출방식(get/post)
-		//GET방식으로 : http://localhost:8081/ehr/user/doSelectOne.do?uId=p22
+		//GET방식으로 : http://localhost:8081/ehr/user/doSelectOne.do?uId=p07
 		MockHttpServletRequestBuilder requestBuilder = MockMvcRequestBuilders.get("/user/doSelectOne.do").param("uId", user01.getuId());
 		
 		ResultActions resultActions = mockMvc.perform(requestBuilder).andExpect(status().isOk());
