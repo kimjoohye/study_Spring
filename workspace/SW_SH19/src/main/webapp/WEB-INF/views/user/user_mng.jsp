@@ -48,32 +48,32 @@
 
             // table click
             $("#user_table > tbody").on("click", "tr", function(e){
-            	
-            	console.log('user_table > tbody');
-            	let tds = $(this).children();
-            	let uId = tds.eq(1).text();
-            	console.log('uId : '+uId);
-            	
-            	let url = "${CP}/user/doSelectOne.do";
-            	let method = "GET";
-            	let async = true;
-            	let parameters = { "uId":uId };
-            	
-            	EClass.callAjax(url, parameters, method, async, function(data){
-            		console.log("data : " + data);
-            		console.log("data.name : " + data.name);
-            		// {"uId":"p07","name":"김주혜07_U","passwd":"4321_U","level":"SILVER","login":11,"recommend":10,"email":"joohea5943@naver.com_U","regDt":"2022-06-21 09:25:56","intLevel":2,"num":0,"totalCnt":0}
-            		
-            		$("#uId").val(data.uId);
-            		$("#name").val(data.name);
-            		$("#passwd").val(data.passwd);
-            		$("#intLevel").val(data.intLevel);
-            		$("#login").val(data.login);
-            		$("#recomment").val(data.recommend);
-            		$("#email").val(data.email);
+                
+                console.log('user_table > tbody');
+                let tds = $(this).children();
+                let uId = tds.eq(1).text();
+                console.log('uId : '+uId);
+                
+                let url = "${CP}/user/doSelectOne.do";
+                let method = "GET";
+                let async = true;
+                let parameters = { "uId":uId };
+                
+                EClass.callAjax(url, parameters, method, async, function(data){
+                    console.log("data : " + data);
+                    console.log("data.name : " + data.name);
+                    // {"uId":"p07","name":"김주혜07_U","passwd":"4321_U","level":"SILVER","login":11,"recommend":10,"email":"joohea5943@naver.com_U","regDt":"2022-06-21 09:25:56","intLevel":2,"num":0,"totalCnt":0}
+                    
+                    $("#uId").val(data.uId);
+                    $("#name").val(data.name);
+                    $("#passwd").val(data.passwd);
+                    $("#intLevel").val(data.intLevel);
+                    $("#login").val(data.login);
+                    $("#recomment").val(data.recommend);
+                    $("#email").val(data.email);
 
 
-            	//--table click
+                //--table click
             });
             
             //--doRetrieve
@@ -92,10 +92,10 @@
                      };
                      
                      EClass.callAjax(url, parameters, method, async, function(data){
-                    	 console.log("Eclass.callAjax data : " + data);
-                    	 
-                    	 let parsedData = data;
-                    	 
+                         console.log("Eclass.callAjax data : " + data);
+                         
+                         let parsedData = data;
+                         
                          //1.
                          $("#user_table > tbody").empty();
                          
