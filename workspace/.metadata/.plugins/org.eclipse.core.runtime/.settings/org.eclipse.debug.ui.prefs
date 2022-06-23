@@ -1,3 +1,9 @@
+Console.console_tab_width=2
+Console.highWaterMark=808000
+Console.interpret_control_characters=true
+Console.lowWaterMark=800000
+Console.width=250
+Console.wrap=true
 eclipse.preferences.version=1
 org.eclipse.debug.ui.PREF_LAUNCH_PERSPECTIVES=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<launchPerspectives/>\r\n
 org.eclipse.debug.ui.save_dirty_editors_before_launch=never
