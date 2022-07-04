@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="KJ"/>
 <aop-project name="SW_SH15_01"/>
+<aop-project name="CTRL"/>
+<aop-project name="SW_FINAL"/>
 </aop-reference-model>

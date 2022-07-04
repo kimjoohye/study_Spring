@@ -52,7 +52,6 @@ public class LoginController {
     	   UserVO loginUser= userService.doSelectOne(inVO);
     	   if(null != loginUser) {
     		   session.setAttribute("user", loginUser);
-    		   
     		   message.setMsgContents(loginUser.getName() + "님이 로그인 되었습니다.");
     	   }
        }

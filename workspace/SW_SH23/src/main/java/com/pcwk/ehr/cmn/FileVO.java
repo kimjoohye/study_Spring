@@ -1,59 +1,62 @@
 package com.pcwk.ehr.cmn;
 
 public class FileVO extends DTO {
-	// 파일아이디(DB)
-	// 파일순번(DB)
-	private String orgFileNm;// 원본 파일명
-	private String saveFileNm;// 저장 파일명
-	private String savePath;// 저장 경로
-	private String fileSize;// 파일 사이즈
-	private String ext;// 확장자
-	
-	public FileVO() {}
+   
+   //파일 아이디(DB)
+   //파일 순번(DB)
+   private String orgFileNm;//원본파일명
+   private String saveFileNm;//저장파일명
+   private String savePath;//저장경로
+   private long fileSize;//파일 사이즈
+   private String ext;//확장자
 
-	public String getOrgFileNm() {
-		return orgFileNm;
-	}
+   public FileVO() {}
 
-	public void setOrgFileNm(String orgFileNm) {
-		this.orgFileNm = orgFileNm;
-	}
+   public String getOrgFileNm() {
+      return orgFileNm;
+   }
 
-	public String getSaveFileNm() {
-		return saveFileNm;
-	}
+   public void setOrgFileNm(String orgFileNm) {
+      this.orgFileNm = orgFileNm;
+   }
 
-	public void setSaveFileNm(String saveFileNm) {
-		this.saveFileNm = saveFileNm;
-	}
+   public String getSaveFileNm() {
+      return saveFileNm;
+   }
 
-	public String getSavePath() {
-		return savePath;
-	}
+   public void setSaveFileNm(String saveFileNm) {
+      this.saveFileNm = saveFileNm;
+   }
 
-	public void setSavePath(String savePath) {
-		this.savePath = savePath;
-	}
+   public String getSavePath() {
+      return savePath;
+   }
 
-	public String getFileSize() {
-		return fileSize;
-	}
+   public void setSavePath(String savePath) {
+      this.savePath = savePath;
+   }
 
-	public void setFileSize(String fileSize) {
-		this.fileSize = fileSize;
-	}
+   public long getFileSize() {
+      return fileSize;
+   }
 
-	public String getExt() {
-		return ext;
-	}
+   public void setFileSize(long fileSize) {
+      this.fileSize = fileSize;
+   }
 
-	public void setExt(String ext) {
-		this.ext = ext;
-	}
+   public String getExt() {
+      return ext;
+   }
 
-	@Override
-	public String toString() {
-		return "FileVO [orgFileNm=" + orgFileNm + ", saveFileNm=" + saveFileNm + ", savePath=" + savePath
-				+ ", fileSize=" + fileSize + ", ext=" + ext + ", toString()=" + super.toString() + "]";
-	}
+   public void setExt(String ext) {
+      this.ext = ext;
+   }
+
+   @Override
+   public String toString() {
+      return "FileVO [orgFileNm=" + orgFileNm + ", saveFileNm=" + saveFileNm + ", savePath=" + savePath
+            + ", fileSize=" + fileSize + ", ext=" + ext + ", toString()=" + super.toString() + "]";
+   }
+   
+   
 }

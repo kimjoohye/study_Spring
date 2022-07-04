@@ -42,6 +42,24 @@
       $(document).ready(function(){
         console.log("document.ready");  
           
+        $(".downloadTable > tbody").on("click", "tr", function(e){
+        	console.log(".downloadTable > tbody");
+        	let tdArrays = $(this).children();
+        	let orgFileNm = tdArrays.eq(0).text();
+        	let saveFileNm = tdArrays.eq(1).text();
+        	let savePath = tdArrays.eq(2).text();
+        	
+        	console.log("orgFileNm:" +orgFileNm );
+        	console.log("saveFileNm:" +saveFileNm );
+        	console.log("savePath:" +savePath );
+        	
+        	$("#orgFileNm").val(orgFileNm);
+        	$("#saveFileNm").val(saveFileNm);
+        	$("#savePath").val(savePath);
+        	
+        	document.fileDownloadFrm.submit();
+        	
+        });
       });
       
       
@@ -56,7 +74,7 @@
     </div>
     <!--// 제목  ---------------------------------------------------------------->
     <!-- form -->
-    <form action="" class="form-horizontal">
+    <form action="${CP}/file/upload.do" method="POST" enctype="multipart/form-data"   class="form-horizontal">
       <div class="form-group">
         <label for="title" class="col-sm-3 col-md-2 col-lg-2 control-label">제목</label>
         <div class="col-sm-9 col-md-10 col-lg-10">
@@ -92,6 +110,50 @@
       </div>          
     </form>
     <!--// form  -------------------------------------------------------------->
+              <!-- table -->
+          list: ${list}
+          <div class="table-responsive">
+           <table class="downloadTable table table-striped table-bordered table-hover table-condensed">
+               <thead class="bg-primary">
+                 <tr>
+                     <th class="text-center col-sm-2 col-md-2 col-lg-2">원본파일명</th>
+                     <th class="text-center col-sm-2 col-md-2 col-lg-2">저장파일명</th>
+                     <th class="text-center col-sm-2 col-md-2 col-lg-2">사이즈</th>
+                     <th class="text-center col-sm-2 col-md-2 col-lg-2">확장자</th>
+                     <th class="text-center col-sm-2 col-md-2 col-lg-2">저장경로</th>
+                 </tr>
+               </thead>
+               <tbody>
+                <!-- 문자: 왼쪽, 숫자: 오른쪽, 같은면: 가운데 -->
+                <c:choose>
+                    <c:when test="${list.size() > 0}">
+                        <c:forEach var="vo" items="${list}">
+			                 <tr>
+			                     <td class="text-center col-sm-1 col-md-1 col-lg-1">${vo.orgFileNm}</td>
+			                     <td class="text-left   col-sm-6 col-md-6 col-lg-8">${vo.saveFileNm}</td>
+			                     <td class="text-center col-sm-2 col-md-2 col-lg-1">${vo.fileSize}</td>
+			                     <td class="text-center col-sm-2 col-md-2 col-lg-1">${vo.ext}</td>
+			                     <td class="text-right  col-sm-1 col-md-1 col-lg-1">${vo.savePath}</td>
+			                 </tr> 
+                        </c:forEach>
+                 </c:when>
+                 <c:otherwise>
+                    <tr>
+                        <td colspan="99" class="text-center">No data found</td>
+                    </tr>
+                 
+                 </c:otherwise>
+                 </c:choose>                                                              
+               </tbody>
+           </table>
+          </div>
+          <!--// tabble ----------------------------------------------------------->
+          <!--  file download : 저장 파일명을 원본 파일로 변경-->
+          <form action="${CP}/file/download.do" name="fileDownLoadFrm" method="post">
+            <input type="text" name="orgFileNm" id="orgFileNm">
+            <input type="text" name="saveFileNm" id="saveFileNm">
+            <input type="text" name="savePath" id="savePath">
+          </form>
     </div>
 </body>
 </html>
